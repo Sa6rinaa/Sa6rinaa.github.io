@@ -1,1 +1,566 @@
-gdstg
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Portfolio de Sabrina Protière - Étudiante BTS SIO développement logiciel">
+    <title>Sabrina Protière - Portfolio Développeuse</title>
+    <link rel="stylesheet" href="index.css">
+</head>
+<body>
+  
+    <header id="header" class="fixed-top">
+        <div class="nav-container">
+            <div class="logo">
+                <a href="#hero">Portfolio</a>
+            </div>
+            <nav class="elements-du-haut">
+                <ul class="nav-menu">
+                    <li>
+                        <a class="nav-bar" href="#a-propos">À propos</a>
+                    </li>
+                    <li class="dropdown">
+                        <a class="nav-bar" href="#competences">Compétences</a>
+                        <ul class="menu-deroulant">
+                            <li><a href="#html">HTML</a></li>
+                            <li><a href="#css">CSS</a></li>
+                            <li><a href="#javascript">JavaScript</a></li>
+                            <li><a href="#php">PHP</a></li>
+                            <li><a href="#mysql">MySQL</a></li>
+                            <li><a href="#react">React</a></li>
+                            <li><a href="#python">Python</a></li>
+                            <li><a href="#linux">Linux</a></li>
+                            <li><a href="#git">Git</a></li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a class="nav-bar" href="#certifications">Certifications</a>
+                    </li>
+                    <li>
+                        <a class="nav-bar" href="#projets">Projets</a>
+                    </li>
+                    <li>
+                        <a class="nav-bar" href="#contact">Contact</a>
+                    </li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+<section id="hero" class="hero">
+    <div class="hero-container">
+        <!-- Votre carré de contenu -->
+        <div class="hero-box">
+            <div class="hero-content">
+                <h1 class="titre-principal">Sabrina Protière</h1>
+                <h2 class="sous-titre">Étudiante BTS SIO - Développement Logiciel</h2>
+                <p class="description-hero">Passionnée par la technologie et le développement web</p>
+                <div class="hero-buttons">
+                    <a href="#a-propos" class="btn btn-primary">Découvrir mon parcours</a>
+                    <a href="#contact" class="btn btn-secondary">Me contacter</a>
+                </div>
+                
+                <!-- Liens rapides -->
+                <div class="quick-links">
+                    <span class="quick-links-label">Liens rapides :</span>
+                    <a href="https://github.com/votre-username" target="_blank" rel="noopener" class="quick-link">GitHub</a>
+                    <span class="separator">|</span>
+                    <a href="https://linkedin.com/in/votre-profil" target="_blank" rel="noopener" class="quick-link">LinkedIn</a>
+                    <span class="separator">|</span>
+                    <a href="mailto:votre.email@example.com" class="quick-link">Email</a>
+                </div>
+            </div>
+        </div>
+        
+        <!-- Votre illustration -->
+        <div class="hero-illustration">
+            <img src="Images/123.jpg" alt="Illustration développement web">
+        </div>
+    </div>
+</section>
+
+
+
+    <!-- Section À propos -->
+    <section id="a-propos" class="section-a-propos">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">À propos de moi</h2>
+            </div>
+            <div class="contenu-a-propos">
+                <div class="texte-a-propos">
+                    <h3>Mon parcours</h3>
+                    <p>
+                        Actuellement étudiante en première année de BTS Services Informatiques aux Organisations, 
+                        je souhaite vous exprimer ma passion pour la technologie et l'informatique, ainsi que mon 
+                        ambition de poursuivre une carrière dans ce domaine en constante évolution.
+                    </p>
+                    <p>
+                        Depuis mon plus jeune âge, j'ai toujours été fascinée par les ordinateurs et les nouvelles 
+                        technologies. La possibilité de créer, de résoudre des problèmes complexes et d'améliorer 
+                        des processus grâce à l'informatique m'a toujours attirée.
+                    </p>
+                    <p>
+                        Je suis particulièrement attirée par le développement logiciel (SLAM) car j'apprécie l'idée 
+                        de pouvoir concevoir des applications qui répondent aux besoins réels des utilisateurs. 
+                        À travers cette spécialité, je souhaite approfondir mes compétences techniques et mes 
+                        capacités à travailler sur des projets d'envergure.
+                    </p>
+                </div>
+                <div class="image-a-propos">
+                    <img src="photo-profil.jpg" alt="Photo de profil de Sabrina Protière" class="photo-profil">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Section Compétences -->
+    <section id="competences" class="section-competences">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">Mes Compétences</h2>
+                <p class="section-subtitle">Technologies et outils que je maîtrise</p>
+            </div>
+            <div class="competences-grid">
+                <div class="competence-card" id="html">
+                    <img src="html.png" alt="Logo HTML" class="competence-icon">
+                    <h3 class="competence-title">HTML</h3>
+                    <p class="competence-description">Structuration et sémantique web</p>
+                </div>
+                <div class="competence-card" id="css">
+                    <img src="css.png" alt="Logo CSS" class="competence-icon">
+                    <h3 class="competence-title">CSS</h3>
+                    <p class="competence-description">Stylisation et mise en page</p>
+                </div>
+                <div class="competence-card" id="javascript">
+                    <img src="js.png" alt="Logo JavaScript" class="competence-icon">
+                    <h3 class="competence-title">JavaScript</h3>
+                    <p class="competence-description">Programmation côté client</p>
+                </div>
+                <div class="competence-card" id="php">
+                    <img src="php.png" alt="Logo PHP" class="competence-icon">
+                    <h3 class="competence-title">PHP</h3>
+                    <p class="competence-description">Développement backend</p>
+                </div>
+                <div class="competence-card" id="mysql">
+                    <img src="MySQL.png" alt="Logo MySQL" class="competence-icon">
+                    <h3 class="competence-title">MySQL</h3>
+                    <p class="competence-description">Gestion de bases de données</p>
+                </div>
+                <div class="competence-card" id="react">
+                    <img src="React.png" alt="Logo React" class="competence-icon">
+                    <h3 class="competence-title">React</h3>
+                    <p class="competence-description">Framework JavaScript</p>
+                </div>
+                <div class="competence-card" id="python">
+                    <img src="Python.png" alt="Logo Python" class="competence-icon">
+                    <h3 class="competence-title">Python</h3>
+                    <p class="competence-description">Programmation polyvalente</p>
+                </div>
+                <div class="competence-card" id="linux">
+                    <img src="Linux.png" alt="Logo Linux" class="competence-icon">
+                    <h3 class="competence-title">Linux</h3>
+                    <p class="competence-description">Administration système</p>
+                </div>
+                <div class="competence-card" id="git">
+                    <img src="Git.png" alt="Logo Git" class="competence-icon">
+                    <h3 class="competence-title">Git</h3>
+                    <p class="competence-description">Gestion de versions</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+       <!-- Frameworks & Bibliothèques -->
+            <div class="competences-category" id="frameworks">
+                <h3 class="category-title">Frameworks & Bibliothèques</h3>
+                <div class="competences-grid">
+                    <div class="competence-card">
+                        <img src="https://img.shields.io/badge/Laravel-FF2D20?style=for-the-badge&logo=laravel&logoColor=white" alt="Laravel">
+                        <p>Laravel 10+</p>
+                    </div>
+                    <div class="competence-card">
+                        <img src="https://img.shields.io/badge/Alpine.js-8BC0D0?style=for-the-badge&logo=alpinedotjs&logoColor=black" alt="Alpine.js">
+                        <p>Alpine.js</p>
+                    </div>
+                    <div class="competence-card">
+                        <img src="https://img.shields.io/badge/Blade-FF2D20?style=for-the-badge&logo=laravel&logoColor=white" alt="Blade">
+                        <p>Blade</p>
+                    </div>
+                    <div class="competence-card">
+                        <img src="https://img.shields.io/badge/Tailwind_CSS-38B2AC?style=for-the-badge&logo=tailwind-css&logoColor=white" alt="Tailwind">
+                        <p>Tailwind CSS</p>
+                    </div>
+                </div>
+            </div>
+
+
+<section class="skills-wrapper">
+
+<section class="skills-wrapper">
+
+  <div class="skills-title">🧠Outils, Technologies & Méthodologies</div>
+
+  <div class="skills-scroller">
+
+    <!-- Outils -->
+    <div class="skill-item">
+      <img src="https://img.shields.io/badge/Git-F05032?style=for-the-badge&logo=git&logoColor=white"> Git / GitHub
+    </div>
+    <div class="skill-item">
+      <img src="https://img.shields.io/badge/Composer-885630?style=for-the-badge&logo=composer&logoColor=white"> Composer
+    </div>
+    <div class="skill-item">
+      <img src="https://img.shields.io/badge/MySQL-4479A1?style=for-the-badge&logo=mysql&logoColor=white"> MySQL / SQLite
+    </div>
+    <div class="skill-item">
+      <img src="https://img.shields.io/badge/Postman-FF6C37?style=for-the-badge&logo=postman&logoColor=white"> Postman / Insomnia
+    </div>
+    <div class="skill-item">
+      <img src="https://img.shields.io/badge/Figma-F24E1E?style=for-the-badge&logo=figma&logoColor=white"> Figma
+    </div>
+    <div class="skill-item">
+      <img src="https://img.shields.io/badge/Docker-2496ED?style=for-the-badge&logo=docker&logoColor=white"> Docker (débutant)
+    </div>
+
+    <!-- Méthodo -->
+    <div class="skill-item"><span class="skill-icon">🏗️</span> Architecture MVC</div>
+    <div class="skill-item"><span class="skill-icon">🔌</span> REST API</div>
+    <div class="skill-item"><span class="skill-icon">🎨</span> UX/UI Design</div>
+    <div class="skill-item"><span class="skill-icon">📡</span> Veille technologique</div>
+    <div class="skill-item"><span class="skill-icon">⚡</span> Gestion Agile</div>
+
+  </div>
+
+</section>
+
+
+    <!-- Section Certifications -->
+    <section id="certifications" class="section-certifications">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">Certifications</h2>
+                <p class="section-subtitle">Validations de mes compétences</p>
+            </div>
+            <div class="certifications-grid">
+                <div class="certification-card">
+                  
+                    <div class="certification-info">
+                         <img src="img2.png" alt="Certification 3" class="certification-image">
+                        <h3 class="certification-title">GitHub  </h3>
+                        <p class="certification-description">Fondamentaux de Git et GitHub ,
+Gestion de repositories,Branches et pull requests Collaboration en équipe 
+GitHub Pages ,GitHub Actions (introduction)</p>
+                    </div>
+                </div>
+                <div class="certification-card">
+                    
+                    <div class="certification-info">
+                        <h3 class="certification-title">GitHub Foundations </h3>
+                        <p class="certification-description">Fondamentaux de Git et GitHub ,
+Gestion de repositories,Branches et pull requests Collaboration en équipe 
+GitHub Pages ,GitHub Actions (introduction)</p>
+                    </div>
+                </div>
+                <div class="certification-card">
+                 
+                    <div class="certification-info">
+                        <h3 class="certification-title">BTS SIO SLAM</h3>
+                        <p class="certification-description"> Développement d'applications web,Gestion de bases de données ,Méthodologies Agile ,Veille technologique ,Travail en équipe</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Section Projets -->
+    <section id="projets" class="section-projets">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">Mes Projets</h2>
+                <p class="section-subtitle">Réalisations et travaux personnels</p>
+            </div>
+            <div class="projets-grid">
+                <article class="projet-card">
+                    <div class="projet-image">
+                        <img src="projet1.jpg" alt="Projet 1" class="projet-thumbnail">
+                    </div>
+                    <div class="projet-content">
+                        <h3 class="projet-title"> API Citations- Septembre 2025  </h3>
+                        <p class="projet-description"> Développement d'une API REST complète pour gérer des citations. <br>L'API 
+permet de créer, lire, modifier et supprimer des citations via <br>des endpoints RESTful. </p>
+                        <div class="projet-technologies">
+                            <span class="tech-tag"> Node.js</span>
+                            <span class="tech-tag">SQLite / MySQL </span>
+                            <span class="tech-tag">JSON </span>
+                            <span class="tech-tag">Postman pour les tests </span>
+                        </div>
+                        <div class="projet-links">
+                            <a href="#" class="btn btn-project">Voir le projet</a>
+                            <a href="#" class="btn btn-github">Code source</a>
+                        </div>
+                    </div>
+                </article>
+                
+                <article class="projet-card">
+                    <div class="projet-image">
+                        <img src="projet2.jpg" alt="Projet 2" class="projet-thumbnail">
+                    </div>
+                    <div class="projet-content">
+                        <h3 class="projet-title">Atelier Figma TechSolutions - Septembre 2025 </h3>
+                        <p class="projet-description"> Conception d'un outil de gestion de tickets IT pour l'entreprise fictive <br>
+TechSolutions. Projet complet suivant une méthodologie UX professionnelle,<br> de l'analyse 
+des besoins utilisateurs jusqu'au prototype interactif. </p>
+                        <div class="projet-technologies">
+                            <span class="tech-tag"> Figma (composants, Auto-layout, prototypage)</span>
+                            
+                        </div>
+                        <div class="projet-links">
+                            <a href="#" class="btn btn-project">Voir le projet</a>
+                            <a href="#" class="btn btn-github">Code source</a>
+                        </div>
+                    </div>
+                </article>
+                
+                <article class="projet-card">
+                    <div class="projet-image">
+                        <img src="projet3.jpg" alt="Projet 3" class="projet-thumbnail">
+                    </div>
+                    <div class="projet-content">
+                        <h3 class="projet-title">Nom du Projet 3</h3>
+                        <p class="projet-description">Description détaillée du projet, technologies utilisées, défis relevés.</p>
+                        <div class="projet-technologies">
+                            <span class="tech-tag">React</span>
+                            <span class="tech-tag">Node.js</span>
+                            <span class="tech-tag">MongoDB</span>
+                        </div>
+                        <div class="projet-links">
+                            <a href="#" class="btn btn-project">Voir le projet</a>
+                            <a href="#" class="btn btn-github">Code source</a>
+                        </div>
+                    </div>
+                </article>
+            </div>
+        </div>
+        <div class="carousel-controls">
+    <button class="carousel-btn" onclick="scrollProjects(-400)">⟵</button>
+    <button class="carousel-btn" onclick="scrollProjects(400)">⟶</button>
+</div>
+    </section>
+
+
+
+
+     <!-- Section Veille Technologique -->
+    <section id="veille" class="section-veille">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">Veille Technologique</h2>
+                <p class="section-subtitle">Ma méthodologie de veille et mes synthèses</p>
+            </div>
+
+            <div class="veille-content">
+                <div class="veille-methodologie">
+                    <h3>Ma méthodologie de veille</h3>
+                    <p>Je maintiens une veille technologique active sur les sujets suivants :</p>
+                    <ul class="veille-topics">
+                        <li>Intelligence Artificielle et ses applications</li>
+                        <li>Frameworks web modernes (Laravel, React, Vue.js)</li>
+                        <li>Pratiques de développement (DevOps, CI/CD)</li>
+                        <li>Sécurité informatique</li>
+                        <li>Tendances UX/UI</li>
+                    </ul>
+
+                    <h4>Mes sources :</h4>
+                    <div class="sources-grid">
+                        <div class="source-item">Blogs techniques (Medium, Dev.to)</div>
+                        <div class="source-item">Newsletters spécialisées (IA Weekly)</div>
+                        <div class="source-item">YouTube (chaînes tech)</div>
+                        <div class="source-item">GitHub Trending</div>
+                        <div class="source-item">Conférences en ligne</div>
+                    </div>
+                </div>
+
+                <div class="syntheses-grid">
+                    <article class="synthese-card">
+                        <h3>IA Weekly - Septembre 2025</h3>
+                        <p>Analyse des annonces NVIDIA, Amazon, OpenAI et impact sur les métiers du développement.</p>
+                        <a href="#" class="btn btn-veille">Lire ma synthèse</a>
+                    </article>
+
+                    <article class="synthese-card">
+                        <h3>🇫🇷 Souveraineté numérique française</h3>
+                        <p>Enjeux stratégiques du secteur et initiatives gouvernementales.</p>
+                        <a href="#" class="btn btn-veille">Lire ma synthèse</a>
+                    </article>
+
+                    <article class="synthese-card">
+                        <h3>🔮 IA en 2026 : Prospective</h3>
+                        <p>Vision d'expert sur l'évolution de l'IA et implications professionnelles. Affiche avec QR code créée.</p>
+                        <a href="#" class="btn btn-veille">Voir mon analyse</a>
+                    </article>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Section Expérience -->
+    <section id="experience" class="section-experience">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">Expérience Professionnelle</h2>
+            </div>
+
+            <div class="experience-timeline">
+                <article class="experience-card">
+                    <div class="experience-date">2024-2026</div>
+                    <div class="experience-content">
+                        <h3>Stage BTS SIO </h3>
+                        <p class="experience-company">YTTY</p>
+                        <p class="experience-poste"><strong>Poste :</strong> Développeur web </p>
+                        
+                        <h4>Missions réalisées :</h4>
+                        <ul class="experience-missions">
+                            <li>[Mission 1 - Description détaillée]</li>
+                            <li>[Mission 2 - Description détaillée]</li>
+                            <li>[Mission 3 - Description détaillée]</li>
+                        </ul>
+
+                        <div class="experience-tech">
+                            <h4>Technologies utilisées :</h4>
+                            <div class="tech-tags">
+                                <span class="tech-tag">Typescript</span>
+                                <span class="tech-tag">[Tech 2]</span>
+                                <span class="tech-tag">[Tech 3]</span>
+                            </div>
+                        </div>
+
+                        <div class="experience-competences">
+                            <h4>Compétences développées :</h4>
+                            <ul>
+                                <li>[Compétence technique 1]</li>
+                                <li>[Compétence technique 2]</li>
+                                <li>[Soft skill 1]</li>
+                                <li>[Soft skill 2]</li>
+                            </ul>
+                        </div>
+                    </div>
+                </article>
+            </div>
+        </div>
+    </section>
+
+
+
+
+    <!-- Section Contact -->
+    <section id="contact" class="section-contact">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">Contactez-moi</h2>
+                <p class="section-subtitle">N'hésitez pas à me contacter pour vos projets</p>
+            </div>
+            <div class="contact-content">
+                <div class="contact-info">
+                    <div class="contact-item">
+                        <div class="contact-icon">
+                            <img src="location-icon.png" alt="Icône localisation" class="icon">
+                        </div>
+                        <div class="contact-details">
+                            <h3>Localisation</h3>
+                            <p>Andrézieux-Bouthéon</p>
+                        </div>
+                    </div>
+                    
+                    <div class="contact-item">
+                        <div class="contact-icon">
+                            <img src="phone-icon.png" alt="Icône téléphone" class="icon">
+                        </div>
+                        <div class="contact-details">
+                            <h3>Téléphone</h3>
+                            <p>07 68 39 84 98</p>
+                        </div>
+                    </div>
+                    
+                    <div class="contact-item">
+                        <div class="contact-icon">
+                            <img src="email-icon.png" alt="Icône email" class="icon">
+                        </div>
+                        <div class="contact-details">
+                            <h3>Email</h3>
+                            <p>sabrina.protière@gmail.com</p>
+                        </div>
+                    </div>
+                    
+                    <div class="illustration">
+                        <img src="Illustration3.png" alt="Illustration contact" class="contact-illustration">
+                    </div>
+                </div>
+                
+                <div class="contact-form">
+                    <form class="formulaire-contact" action="#" method="POST">
+                        <div class="form-group">
+                            <label for="nom">Nom complet</label>
+                            <input type="text" id="nom" name="nom" placeholder="Votre nom complet" required>
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="email">Adresse email</label>
+                            <input type="email" id="email" name="email" placeholder="votre.email@exemple.com" required>
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="sujet">Sujet</label>
+                            <input type="text" id="sujet" name="sujet" placeholder="Sujet de votre message">
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="message">Message</label>
+                            <textarea id="message" name="message" rows="6" placeholder="Votre message..." required></textarea>
+                        </div>
+                        
+                        <button type="submit" class="btn btn-submit">Envoyer le message</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h3>Sabrina Protière</h3>
+                    <p>Étudiante BTS SIO - Développement Logiciel</p>
+                </div>
+                
+                <div class="footer-section">
+                    <h4>Navigation</h4>
+                    <ul class="footer-links">
+                        <li><a href="#a-propos">À propos</a></li>
+                        <li><a href="#competences">Compétences</a></li>
+                        <li><a href="#projets">Projets</a></li>
+                        <li><a href="#contact">Contact</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-section">
+                    <h4>Contact</h4>
+                    <ul class="footer-contact">
+                        <li>Andrézieux-Bouthéon</li>
+                        <li>07 68 39 84 98</li>
+                        <li>sabrina.protière@gmail.com</li>
+                    </ul>
+                </div>
+            </div>
+            
+            <div class="footer-bottom">
+                <p>&copy; 2024 Sabrina Protière. Tous droits réservés.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="index.js" defer></script>
+</body>
+</html>
