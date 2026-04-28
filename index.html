@@ -3,563 +3,1485 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Portfolio de Sabrina Protière - Étudiante BTS SIO développement logiciel">
-    <title>Sabrina Protière - Portfolio Développeuse</title>
+    <title>Sabrina Protière — Portfolio</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,600;0,700;1,400;1,600&family=Plus+Jakarta+Sans:wght@300;400;500;600;700&family=JetBrains+Mono:wght@300;400;500&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="index.css">
 </head>
 <body>
-  
-    <header id="header" class="fixed-top">
-        <div class="nav-container">
-            <div class="logo">
-                <a href="#hero">Portfolio</a>
-            </div>
-            <nav class="elements-du-haut">
-                <ul class="nav-menu">
-                    <li>
-                        <a class="nav-bar" href="#a-propos">À propos</a>
+
+    <div class="cursor-dot"></div>
+    <div class="cursor-ring"></div>
+    <div class="scroll-progress"></div>
+
+    <!-- ── HEADER ── -->
+    <header id="header">
+        <div class="nav-inner">
+            <div class="nav-logo"><a href="#hero">Portolio<span class="logo-dot">.</span></a></div>
+            <nav class="nav-main">
+                <ul class="nav-links">
+                    <li><a href="#a-propos">À propos</a></li>
+                    <li class="nav-dropdown-wrap">
+                        <a href="#competences" class="nav-dropdown-trigger">
+                            Compétences
+                            <svg class="nav-chevron" width="10" height="6" viewBox="0 0 10 6"><path d="M1 1l4 4 4-4" stroke="currentColor" stroke-width="1.5" fill="none" stroke-linecap="round"/></svg>
+                        </a>
+                        <div class="nav-dropdown">
+                            <a href="#competences">HTML</a>
+                            <a href="#competences">CSS</a>
+                            <a href="#competences">JavaScript</a>
+                            <a href="#competences">PHP</a>
+                            <a href="#competences">MySQL</a>
+                            <a href="#competences">React</a>
+                            <a href="#competences">Python</a>
+                            <a href="#competences">Linux</a>
+                            <a href="#competences">Git</a>
+                        </div>
                     </li>
-                    <li class="dropdown">
-                        <a class="nav-bar" href="#competences">Compétences</a>
-                        <ul class="menu-deroulant">
-                            <li><a href="#html">HTML</a></li>
-                            <li><a href="#css">CSS</a></li>
-                            <li><a href="#javascript">JavaScript</a></li>
-                            <li><a href="#php">PHP</a></li>
-                            <li><a href="#mysql">MySQL</a></li>
-                            <li><a href="#react">React</a></li>
-                            <li><a href="#python">Python</a></li>
-                            <li><a href="#linux">Linux</a></li>
-                            <li><a href="#git">Git</a></li>
-                        </ul>
-                    </li>
-                    <li>
-                        <a class="nav-bar" href="#certifications">Certifications</a>
-                    </li>
-                    <li>
-                        <a class="nav-bar" href="#projets">Projets</a>
-                    </li>
-                    <li>
-                        <a class="nav-bar" href="#contact">Contact</a>
-                    </li>
+                    <li><a href="#certifications">Certifications</a></li>
+                    <li><a href="#projets">Projets</a></li>
+                    <li><a href="#experience">Expérience</a></li>
+                    <li><a href="#contact">Contact</a></li>
                 </ul>
             </nav>
         </div>
+        <div class="nav-glow"></div>
     </header>
 
-<section id="hero" class="hero">
-    <div class="hero-container">
-        <!-- Votre carré de contenu -->
-        <div class="hero-box">
-            <div class="hero-content">
-                <h1 class="titre-principal">Sabrina Protière</h1>
-                <h2 class="sous-titre">Étudiante BTS SIO - Développement Logiciel</h2>
-                <p class="description-hero">Passionnée par la technologie et le développement web</p>
-                <div class="hero-buttons">
-                    <a href="#a-propos" class="btn btn-primary">Découvrir mon parcours</a>
-                    <a href="#contact" class="btn btn-secondary">Me contacter</a>
-                </div>
-                
-                <!-- Liens rapides -->
-                <div class="quick-links">
-                    <span class="quick-links-label">Liens rapides :</span>
-                    <a href="https://github.com/votre-username" target="_blank" rel="noopener" class="quick-link">GitHub</a>
-                    <span class="separator">|</span>
-                    <a href="https://linkedin.com/in/votre-profil" target="_blank" rel="noopener" class="quick-link">LinkedIn</a>
-                    <span class="separator">|</span>
-                    <a href="mailto:votre.email@example.com" class="quick-link">Email</a>
-                </div>
+    <!-- ── HERO ── (MODIFIÉ - style similaire à la photo 2 mais différent) -->
+    <section id="hero" class="hero">
+        <div class="hero-bg">
+            <div class="hero-mesh"></div>
+            <div class="hero-grain"></div>
+            <div class="hero-particles">
+                <span class="particle"></span><span class="particle"></span><span class="particle"></span>
+                <span class="particle"></span><span class="particle"></span><span class="particle"></span>
+                <span class="particle"></span><span class="particle"></span>
             </div>
         </div>
-        
-        <!-- Votre illustration -->
-        <div class="hero-illustration">
-            <img src="Images/123.jpg" alt="Illustration développement web">
+        <div class="hero-wrapper">
+           
+            <h1 class="hero-name reveal-up" style="animation-delay:.1s">
+                <span class="hero-firstname">Sabrina</span>
+                <em class="hero-lastname">Protière</em>
+            </h1>
+            <div class="hero-divider reveal-up" style="animation-delay:.15s"></div>
+            <p class="hero-desc reveal-up" style="animation-delay:.2s">
+                Passionnée par la technologie et le développement web,<br>
+                je conçois des interfaces qui allient performance et expérience utilisateur.
+            </p>
+            <div class="hero-actions reveal-up" style="animation-delay:.3s">
+                <a href="#projets" class="btn-primary">
+                    <span>Voir mes projets</span>
+                    <svg width="16" height="16" viewBox="0 0 16 16" fill="none"><path d="M3 8h10M9 4l4 4-4 4" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
+                </a>
+                <a href="#contact" class="btn-ghost">Me contacter</a>
+            </div>
+            <div class="hero-socials reveal-up" style="animation-delay:.4s">
+                <a href="https://github.com/Sa6rinaa" target="_blank" class="hero-social-icon" title="GitHub">
+                    <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M12 0C5.37 0 0 5.37 0 12c0 5.3 3.44 9.8 8.2 11.37.6.1.82-.26.82-.58v-2.03c-3.34.72-4.04-1.61-4.04-1.61-.54-1.38-1.33-1.74-1.33-1.74-1.08-.74.08-.72.08-.72 1.2.08 1.83 1.23 1.83 1.23 1.06 1.82 2.78 1.29 3.46.99.1-.77.41-1.3.75-1.59-2.67-.3-5.47-1.33-5.47-5.93 0-1.31.47-2.38 1.24-3.22-.12-.3-.54-1.52.12-3.18 0 0 1.01-.32 3.3 1.23a11.5 11.5 0 0 1 3-.4c1.02.005 2.04.14 3 .4 2.28-1.55 3.29-1.23 3.29-1.23.66 1.66.24 2.88.12 3.18.77.84 1.24 1.91 1.24 3.22 0 4.61-2.8 5.63-5.48 5.92.43.37.81 1.1.81 2.22v3.29c0 .32.22.7.82.58C20.56 21.8 24 17.3 24 12c0-6.63-5.37-12-12-12z"/></svg>
+                </a>
+                <a href="https://www.linkedin.com/in/sabrina-protiere-6121a4353/" target="_blank" class="hero-social-icon" title="LinkedIn">
+                    <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M20.45 20.45h-3.55v-5.57c0-1.33-.02-3.04-1.85-3.04-1.85 0-2.14 1.45-2.14 2.95v5.66H9.36V9h3.41v1.56h.05c.47-.9 1.63-1.85 3.36-1.85 3.6 0 4.27 2.37 4.27 5.45v6.29zM5.34 7.43a2.06 2.06 0 1 1 0-4.12 2.06 2.06 0 0 1 0 4.12zm1.78 13.02H3.56V9h3.56v11.45zM22.22 0H1.77C.79 0 0 .77 0 1.73v20.54C0 23.23.79 24 1.77 24h20.45c.98 0 1.78-.77 1.78-1.73V1.73C24 .77 23.2 0 22.22 0z"/></svg>
+                </a>
+                <a href="mailto:sabrina.protiere@gmail.com" class="hero-social-icon" title="Email">
+                    <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="2" y="4" width="20" height="16" rx="2"/><path d="m2 7 10 7 10-7"/></svg>
+                </a>
+            </div>
         </div>
-    </div>
-</section>
+        <div class="hero-scroll">
+            <span>Scroll</span>
+            <div class="scroll-line"></div>
+        </div>
+    </section>
 
-
-
-    <!-- Section À propos -->
-    <section id="a-propos" class="section-a-propos">
+    <!-- ── À PROPOS ── -->
+    <section id="a-propos" class="section-about">
         <div class="container">
-            <div class="section-header">
-                <h2 class="section-title">À propos de moi</h2>
-            </div>
-            <div class="contenu-a-propos">
-                <div class="texte-a-propos">
-                    <h3>Mon parcours</h3>
-                    <p>
-                        Actuellement étudiante en première année de BTS Services Informatiques aux Organisations, 
-                        je souhaite vous exprimer ma passion pour la technologie et l'informatique, ainsi que mon 
-                        ambition de poursuivre une carrière dans ce domaine en constante évolution.
+            <div class="about-grid">
+                <div class="about-left reveal-up">
+                    <div class="section-eyebrow"></div>
+                    <h2>Dévéloppeuse<br>de <em>solutions</em><br>numériques</h2>
+                    <!-- MODIFIÉ: photo centrée dans son cadre -->
+                    <div class="about-photo-wrap">
+                        <div class="about-photo-frame">
+                            <img src="Images/photo-profil.jpg" alt="Sabrina Protière" class="about-photo">
+                            <div class="photo-overlay"></div>
+                        </div>
+                        <div class="photo-corner photo-corner-tl"></div>
+                        <div class="photo-corner photo-corner-br"></div>
+                    </div>
+                </div>
+                <div class="about-right reveal-up" style="animation-delay:.15s">
+                    <p class="about-lead">
+                        Je suis <strong>Sabrina Protière</strong>, étudiante passionnée par le développement informatique et les technologies numériques, actuellement en 2ème année de BTS SIO option SLAM.
                     </p>
                     <p>
-                        Depuis mon plus jeune âge, j'ai toujours été fascinée par les ordinateurs et les nouvelles 
-                        technologies. La possibilité de créer, de résoudre des problèmes complexes et d'améliorer 
-                        des processus grâce à l'informatique m'a toujours attirée.
+                        J'apprends à concevoir des applications et à résoudre des problématiques techniques tout en développant mes compétences en programmation. Chaque projet est pour moi une opportunité d'explorer de nouvelles technologies et d'affiner mes pratiques.
                     </p>
                     <p>
-                        Je suis particulièrement attirée par le développement logiciel (SLAM) car j'apprécie l'idée 
-                        de pouvoir concevoir des applications qui répondent aux besoins réels des utilisateurs. 
-                        À travers cette spécialité, je souhaite approfondir mes compétences techniques et mes 
-                        capacités à travailler sur des projets d'envergure.
+                        Mon objectif est de devenir développeuse et de contribuer à des projets innovants au sein d'une équipe dynamique. Je suis particulièrement attirée par le développement logiciel car j'apprécie l'idée de concevoir des applications qui répondent aux besoins réels des utilisateurs.
                     </p>
-                </div>
-                <div class="image-a-propos">
-                    <img src="photo-profil.jpg" alt="Photo de profil de Sabrina Protière" class="photo-profil">
-                </div>
-            </div>
-        </div>
-    </section>
 
-    <!-- Section Compétences -->
-    <section id="competences" class="section-competences">
-        <div class="container">
-            <div class="section-header">
-                <h2 class="section-title">Mes Compétences</h2>
-                <p class="section-subtitle">Technologies et outils que je maîtrise</p>
-            </div>
-            <div class="competences-grid">
-                <div class="competence-card" id="html">
-                    <img src="html.png" alt="Logo HTML" class="competence-icon">
-                    <h3 class="competence-title">HTML</h3>
-                    <p class="competence-description">Structuration et sémantique web</p>
-                </div>
-                <div class="competence-card" id="css">
-                    <img src="css.png" alt="Logo CSS" class="competence-icon">
-                    <h3 class="competence-title">CSS</h3>
-                    <p class="competence-description">Stylisation et mise en page</p>
-                </div>
-                <div class="competence-card" id="javascript">
-                    <img src="js.png" alt="Logo JavaScript" class="competence-icon">
-                    <h3 class="competence-title">JavaScript</h3>
-                    <p class="competence-description">Programmation côté client</p>
-                </div>
-                <div class="competence-card" id="php">
-                    <img src="php.png" alt="Logo PHP" class="competence-icon">
-                    <h3 class="competence-title">PHP</h3>
-                    <p class="competence-description">Développement backend</p>
-                </div>
-                <div class="competence-card" id="mysql">
-                    <img src="MySQL.png" alt="Logo MySQL" class="competence-icon">
-                    <h3 class="competence-title">MySQL</h3>
-                    <p class="competence-description">Gestion de bases de données</p>
-                </div>
-                <div class="competence-card" id="react">
-                    <img src="React.png" alt="Logo React" class="competence-icon">
-                    <h3 class="competence-title">React</h3>
-                    <p class="competence-description">Framework JavaScript</p>
-                </div>
-                <div class="competence-card" id="python">
-                    <img src="Python.png" alt="Logo Python" class="competence-icon">
-                    <h3 class="competence-title">Python</h3>
-                    <p class="competence-description">Programmation polyvalente</p>
-                </div>
-                <div class="competence-card" id="linux">
-                    <img src="Linux.png" alt="Logo Linux" class="competence-icon">
-                    <h3 class="competence-title">Linux</h3>
-                    <p class="competence-description">Administration système</p>
-                </div>
-                <div class="competence-card" id="git">
-                    <img src="Git.png" alt="Logo Git" class="competence-icon">
-                    <h3 class="competence-title">Git</h3>
-                    <p class="competence-description">Gestion de versions</p>
-                </div>
-            </div>
-        </div>
-    </section>
-
-       <!-- Frameworks & Bibliothèques -->
-            <div class="competences-category" id="frameworks">
-                <h3 class="category-title">Frameworks & Bibliothèques</h3>
-                <div class="competences-grid">
-                    <div class="competence-card">
-                        <img src="https://img.shields.io/badge/Laravel-FF2D20?style=for-the-badge&logo=laravel&logoColor=white" alt="Laravel">
-                        <p>Laravel 10+</p>
-                    </div>
-                    <div class="competence-card">
-                        <img src="https://img.shields.io/badge/Alpine.js-8BC0D0?style=for-the-badge&logo=alpinedotjs&logoColor=black" alt="Alpine.js">
-                        <p>Alpine.js</p>
-                    </div>
-                    <div class="competence-card">
-                        <img src="https://img.shields.io/badge/Blade-FF2D20?style=for-the-badge&logo=laravel&logoColor=white" alt="Blade">
-                        <p>Blade</p>
-                    </div>
-                    <div class="competence-card">
-                        <img src="https://img.shields.io/badge/Tailwind_CSS-38B2AC?style=for-the-badge&logo=tailwind-css&logoColor=white" alt="Tailwind">
-                        <p>Tailwind CSS</p>
-                    </div>
-                </div>
-            </div>
-
-
-<section class="skills-wrapper">
-
-<section class="skills-wrapper">
-
-  <div class="skills-title">🧠Outils, Technologies & Méthodologies</div>
-
-  <div class="skills-scroller">
-
-    <!-- Outils -->
-    <div class="skill-item">
-      <img src="https://img.shields.io/badge/Git-F05032?style=for-the-badge&logo=git&logoColor=white"> Git / GitHub
-    </div>
-    <div class="skill-item">
-      <img src="https://img.shields.io/badge/Composer-885630?style=for-the-badge&logo=composer&logoColor=white"> Composer
-    </div>
-    <div class="skill-item">
-      <img src="https://img.shields.io/badge/MySQL-4479A1?style=for-the-badge&logo=mysql&logoColor=white"> MySQL / SQLite
-    </div>
-    <div class="skill-item">
-      <img src="https://img.shields.io/badge/Postman-FF6C37?style=for-the-badge&logo=postman&logoColor=white"> Postman / Insomnia
-    </div>
-    <div class="skill-item">
-      <img src="https://img.shields.io/badge/Figma-F24E1E?style=for-the-badge&logo=figma&logoColor=white"> Figma
-    </div>
-    <div class="skill-item">
-      <img src="https://img.shields.io/badge/Docker-2496ED?style=for-the-badge&logo=docker&logoColor=white"> Docker (débutant)
-    </div>
-
-    <!-- Méthodo -->
-    <div class="skill-item"><span class="skill-icon">🏗️</span> Architecture MVC</div>
-    <div class="skill-item"><span class="skill-icon">🔌</span> REST API</div>
-    <div class="skill-item"><span class="skill-icon">🎨</span> UX/UI Design</div>
-    <div class="skill-item"><span class="skill-icon">📡</span> Veille technologique</div>
-    <div class="skill-item"><span class="skill-icon">⚡</span> Gestion Agile</div>
-
-  </div>
-
-</section>
-
-
-    <!-- Section Certifications -->
-    <section id="certifications" class="section-certifications">
-        <div class="container">
-            <div class="section-header">
-                <h2 class="section-title">Certifications</h2>
-                <p class="section-subtitle">Validations de mes compétences</p>
-            </div>
-            <div class="certifications-grid">
-                <div class="certification-card">
-                  
-                    <div class="certification-info">
-                         <img src="img2.png" alt="Certification 3" class="certification-image">
-                        <h3 class="certification-title">GitHub  </h3>
-                        <p class="certification-description">Fondamentaux de Git et GitHub ,
-Gestion de repositories,Branches et pull requests Collaboration en équipe 
-GitHub Pages ,GitHub Actions (introduction)</p>
-                    </div>
-                </div>
-                <div class="certification-card">
-                    
-                    <div class="certification-info">
-                        <h3 class="certification-title">GitHub Foundations </h3>
-                        <p class="certification-description">Fondamentaux de Git et GitHub ,
-Gestion de repositories,Branches et pull requests Collaboration en équipe 
-GitHub Pages ,GitHub Actions (introduction)</p>
-                    </div>
-                </div>
-                <div class="certification-card">
-                 
-                    <div class="certification-info">
-                        <h3 class="certification-title">BTS SIO SLAM</h3>
-                        <p class="certification-description"> Développement d'applications web,Gestion de bases de données ,Méthodologies Agile ,Veille technologique ,Travail en équipe</p>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- Section Projets -->
-    <section id="projets" class="section-projets">
-        <div class="container">
-            <div class="section-header">
-                <h2 class="section-title">Mes Projets</h2>
-                <p class="section-subtitle">Réalisations et travaux personnels</p>
-            </div>
-            <div class="projets-grid">
-                <article class="projet-card">
-                    <div class="projet-image">
-                        <img src="projet1.jpg" alt="Projet 1" class="projet-thumbnail">
-                    </div>
-                    <div class="projet-content">
-                        <h3 class="projet-title"> API Citations- Septembre 2025  </h3>
-                        <p class="projet-description"> Développement d'une API REST complète pour gérer des citations. <br>L'API 
-permet de créer, lire, modifier et supprimer des citations via <br>des endpoints RESTful. </p>
-                        <div class="projet-technologies">
-                            <span class="tech-tag"> Node.js</span>
-                            <span class="tech-tag">SQLite / MySQL </span>
-                            <span class="tech-tag">JSON </span>
-                            <span class="tech-tag">Postman pour les tests </span>
-                        </div>
-                        <div class="projet-links">
-                            <a href="#" class="btn btn-project">Voir le projet</a>
-                            <a href="#" class="btn btn-github">Code source</a>
-                        </div>
-                    </div>
-                </article>
-                
-                <article class="projet-card">
-                    <div class="projet-image">
-                        <img src="projet2.jpg" alt="Projet 2" class="projet-thumbnail">
-                    </div>
-                    <div class="projet-content">
-                        <h3 class="projet-title">Atelier Figma TechSolutions - Septembre 2025 </h3>
-                        <p class="projet-description"> Conception d'un outil de gestion de tickets IT pour l'entreprise fictive <br>
-TechSolutions. Projet complet suivant une méthodologie UX professionnelle,<br> de l'analyse 
-des besoins utilisateurs jusqu'au prototype interactif. </p>
-                        <div class="projet-technologies">
-                            <span class="tech-tag"> Figma (composants, Auto-layout, prototypage)</span>
-                            
-                        </div>
-                        <div class="projet-links">
-                            <a href="#" class="btn btn-project">Voir le projet</a>
-                            <a href="#" class="btn btn-github">Code source</a>
-                        </div>
-                    </div>
-                </article>
-                
-                <article class="projet-card">
-                    <div class="projet-image">
-                        <img src="projet3.jpg" alt="Projet 3" class="projet-thumbnail">
-                    </div>
-                    <div class="projet-content">
-                        <h3 class="projet-title">Nom du Projet 3</h3>
-                        <p class="projet-description">Description détaillée du projet, technologies utilisées, défis relevés.</p>
-                        <div class="projet-technologies">
-                            <span class="tech-tag">React</span>
-                            <span class="tech-tag">Node.js</span>
-                            <span class="tech-tag">MongoDB</span>
-                        </div>
-                        <div class="projet-links">
-                            <a href="#" class="btn btn-project">Voir le projet</a>
-                            <a href="#" class="btn btn-github">Code source</a>
-                        </div>
-                    </div>
-                </article>
-            </div>
-        </div>
-        <div class="carousel-controls">
-    <button class="carousel-btn" onclick="scrollProjects(-400)">⟵</button>
-    <button class="carousel-btn" onclick="scrollProjects(400)">⟶</button>
-</div>
-    </section>
-
-
-
-
-     <!-- Section Veille Technologique -->
-    <section id="veille" class="section-veille">
-        <div class="container">
-            <div class="section-header">
-                <h2 class="section-title">Veille Technologique</h2>
-                <p class="section-subtitle">Ma méthodologie de veille et mes synthèses</p>
-            </div>
-
-            <div class="veille-content">
-                <div class="veille-methodologie">
-                    <h3>Ma méthodologie de veille</h3>
-                    <p>Je maintiens une veille technologique active sur les sujets suivants :</p>
-                    <ul class="veille-topics">
-                        <li>Intelligence Artificielle et ses applications</li>
-                        <li>Frameworks web modernes (Laravel, React, Vue.js)</li>
-                        <li>Pratiques de développement (DevOps, CI/CD)</li>
-                        <li>Sécurité informatique</li>
-                        <li>Tendances UX/UI</li>
-                    </ul>
-
-                    <h4>Mes sources :</h4>
-                    <div class="sources-grid">
-                        <div class="source-item">Blogs techniques (Medium, Dev.to)</div>
-                        <div class="source-item">Newsletters spécialisées (IA Weekly)</div>
-                        <div class="source-item">YouTube (chaînes tech)</div>
-                        <div class="source-item">GitHub Trending</div>
-                        <div class="source-item">Conférences en ligne</div>
-                    </div>
-                </div>
-
-                <div class="syntheses-grid">
-                    <article class="synthese-card">
-                        <h3>IA Weekly - Septembre 2025</h3>
-                        <p>Analyse des annonces NVIDIA, Amazon, OpenAI et impact sur les métiers du développement.</p>
-                        <a href="#" class="btn btn-veille">Lire ma synthèse</a>
-                    </article>
-
-                    <article class="synthese-card">
-                        <h3>🇫🇷 Souveraineté numérique française</h3>
-                        <p>Enjeux stratégiques du secteur et initiatives gouvernementales.</p>
-                        <a href="#" class="btn btn-veille">Lire ma synthèse</a>
-                    </article>
-
-                    <article class="synthese-card">
-                        <h3>🔮 IA en 2026 : Prospective</h3>
-                        <p>Vision d'expert sur l'évolution de l'IA et implications professionnelles. Affiche avec QR code créée.</p>
-                        <a href="#" class="btn btn-veille">Voir mon analyse</a>
-                    </article>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- Section Expérience -->
-    <section id="experience" class="section-experience">
-        <div class="container">
-            <div class="section-header">
-                <h2 class="section-title">Expérience Professionnelle</h2>
-            </div>
-
-            <div class="experience-timeline">
-                <article class="experience-card">
-                    <div class="experience-date">2024-2026</div>
-                    <div class="experience-content">
-                        <h3>Stage BTS SIO </h3>
-                        <p class="experience-company">YTTY</p>
-                        <p class="experience-poste"><strong>Poste :</strong> Développeur web </p>
-                        
-                        <h4>Missions réalisées :</h4>
-                        <ul class="experience-missions">
-                            <li>[Mission 1 - Description détaillée]</li>
-                            <li>[Mission 2 - Description détaillée]</li>
-                            <li>[Mission 3 - Description détaillée]</li>
-                        </ul>
-
-                        <div class="experience-tech">
-                            <h4>Technologies utilisées :</h4>
-                            <div class="tech-tags">
-                                <span class="tech-tag">Typescript</span>
-                                <span class="tech-tag">[Tech 2]</span>
-                                <span class="tech-tag">[Tech 3]</span>
+                    <div class="about-highlights">
+                        <div class="highlight-item">
+                            <div class="highlight-icon">
+                                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="16 18 22 12 16 6"/><polyline points="8 6 2 12 8 18"/></svg>
+                            </div>
+                            <div>
+                                <strong>Développement web</strong>
+                                <span>HTML, CSS, JS, PHP, React</span>
                             </div>
                         </div>
-
-                        <div class="experience-competences">
-                            <h4>Compétences développées :</h4>
-                            <ul>
-                                <li>[Compétence technique 1]</li>
-                                <li>[Compétence technique 2]</li>
-                                <li>[Soft skill 1]</li>
-                                <li>[Soft skill 2]</li>
-                            </ul>
+                        <div class="highlight-item">
+                            <div class="highlight-icon">
+                                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="2" y="3" width="20" height="14" rx="2"/><line x1="8" y1="21" x2="16" y2="21"/><line x1="12" y1="17" x2="12" y2="21"/></svg>
+                            </div>
+                            <div>
+                                <strong>UX / UI Design</strong>
+                                <span>Figma, prototypage, maquettes</span>
+                            </div>
+                        </div>
+                        <div class="highlight-item">
+                            <div class="highlight-icon">
+                                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><ellipse cx="12" cy="5" rx="9" ry="3"/><path d="M21 12c0 1.66-4 3-9 3s-9-1.34-9-3"/><path d="M3 5v14c0 1.66 4 3 9 3s9-1.34 9-3V5"/></svg>
+                            </div>
+                            <div>
+                                <strong>Bases de données</strong>
+                                <span>MySQL, SQLite, modélisation</span>
+                            </div>
+                        </div>
+                        <div class="highlight-item">
+                            <div class="highlight-icon">
+                                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M23 21v-2a4 4 0 0 0-3-3.87"/><path d="M16 3.13a4 4 0 0 1 0 7.75"/></svg>
+                            </div>
+                            <div>
+                                <strong>Travail en équipe</strong>
+                                <span>Agile, Git, collaboration</span>
+                            </div>
                         </div>
                     </div>
-                </article>
+
+                    <div class="about-actions">
+                        <a href="#projets" class="btn-primary">
+                            <span>Voir mes projets</span>
+                            <svg width="16" height="16" viewBox="0 0 16 16" fill="none"><path d="M3 8h10M9 4l4 4-4 4" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
+                        </a>
+                        <a href="#contact" class="btn-ghost">Me contacter</a>
+                    </div>
+                </div>
             </div>
         </div>
     </section>
 
+    <!-- ── COMPÉTENCES ── -->
+    <section id="competences" class="section-competences">
+        <div class="container">
+            <h2 class="section-title reveal-up">Languages de  <em>Programmation</em></h2>
+            <!-- MODIFIÉ: data-pct pour le pourcentage au hover -->
+            <div class="comp-grid reveal-up" style="animation-delay:.1s">
+                <div class="comp-card" data-pct="90"><div class="comp-icon"><img src="https://img.shields.io/badge/HTML5-E34F26?style=for-the-badge&logo=html5&logoColor=white" alt="HTML"></div><h3>HTML</h3><p>Structuration et sémantique web</p><div class="comp-bar"><div class="comp-fill" style="--w:90%"></div></div><div class="comp-pct-tooltip">90%</div></div>
+                <div class="comp-card" data-pct="88"><div class="comp-icon"><img src="https://img.shields.io/badge/CSS3-1572B6?style=for-the-badge&logo=css3&logoColor=white" alt="CSS"></div><h3>CSS</h3><p>Stylisation et mise en page</p><div class="comp-bar"><div class="comp-fill" style="--w:88%"></div></div><div class="comp-pct-tooltip">88%</div></div>
+                <div class="comp-card" data-pct="80"><div class="comp-icon"><img src="https://img.shields.io/badge/JavaScript-F7DF1E?style=for-the-badge&logo=javascript&logoColor=black" alt="JavaScript"></div><h3>JavaScript</h3><p>Programmation côté client</p><div class="comp-bar"><div class="comp-fill" style="--w:80%"></div></div><div class="comp-pct-tooltip">80%</div></div>
+                <div class="comp-card" data-pct="72"><div class="comp-icon"><img src="https://img.shields.io/badge/PHP-777BB4?style=for-the-badge&logo=php&logoColor=white" alt="PHP"></div><h3>PHP</h3><p>Développement backend</p><div class="comp-bar"><div class="comp-fill" style="--w:72%"></div></div><div class="comp-pct-tooltip">72%</div></div>
+                <div class="comp-card" data-pct="75"><div class="comp-icon"><img src="https://img.shields.io/badge/MySQL-4479A1?style=for-the-badge&logo=mysql&logoColor=white" alt="MySQL"></div><h3>MySQL</h3><p>Gestion de bases de données</p><div class="comp-bar"><div class="comp-fill" style="--w:75%"></div></div><div class="comp-pct-tooltip">75%</div></div>
+                <div class="comp-card" data-pct="65"><div class="comp-icon"><img src="https://img.shields.io/badge/React-20232A?style=for-the-badge&logo=react&logoColor=61DAFB" alt="React"></div><h3>React</h3><p>Framework JavaScript</p><div class="comp-bar"><div class="comp-fill" style="--w:65%"></div></div><div class="comp-pct-tooltip">65%</div></div>
+                <div class="comp-card" data-pct="68"><div class="comp-icon"><img src="https://img.shields.io/badge/Python-3776AB?style=for-the-badge&logo=python&logoColor=white" alt="Python"></div><h3>Python</h3><p>Programmation polyvalente</p><div class="comp-bar"><div class="comp-fill" style="--w:68%"></div></div><div class="comp-pct-tooltip">68%</div></div>
+                <div class="comp-card" data-pct="60"><div class="comp-icon"><img src="https://img.shields.io/badge/Linux-FCC624?style=for-the-badge&logo=linux&logoColor=black" alt="Linux"></div><h3>Linux</h3><p>Administration système</p><div class="comp-bar"><div class="comp-fill" style="--w:60%"></div></div><div class="comp-pct-tooltip">60%</div></div>
+                <div class="comp-card" data-pct="82"><div class="comp-icon"><img src="https://img.shields.io/badge/Git-F05032?style=for-the-badge&logo=git&logoColor=white" alt="Git"></div><h3>Git</h3><p>Gestion de versions</p><div class="comp-bar"><div class="comp-fill" style="--w:82%"></div></div><div class="comp-pct-tooltip">82%</div></div>
+            </div>
 
+<div class="section-eyebrow reveal-up" style="margin-top:80px">
+    <span class="eyebrow-num">+</span>
+    <span>Frameworks &amp; Bibliothèques</span>
+</div>
+<div class="fw-carousel-outer reveal-up" style="animation-delay:.1s">
+    <div class="fw-carousel-track">
+        <div class="fw-item"><img src="https://img.shields.io/badge/Laravel-FF2D20?style=for-the-badge&logo=laravel&logoColor=white" alt="Laravel"><span>Laravel</span></div>
+        <div class="fw-item"><img src="https://img.shields.io/badge/React-61DAFB?style=for-the-badge&logo=react&logoColor=black" alt="React"><span>React</span></div>
+        <div class="fw-item"><img src="https://img.shields.io/badge/JavaScript-F7DF1E?style=for-the-badge&logo=javascript&logoColor=black" alt="JavaScript"><span>JavaScript</span></div>
+        <div class="fw-item"><img src="https://img.shields.io/badge/Alpine.js-8BC0D0?style=for-the-badge&logo=alpinedotjs&logoColor=black" alt="Alpine.js"><span>Alpine.js</span></div>
+        
+        <div class="fw-item"><img src="https://img.shields.io/badge/Tailwind_CSS-38B2AC?style=for-the-badge&logo=tailwind-css&logoColor=white" alt="Tailwind CSS"><span>Tailwind CSS</span></div>
+        <div class="fw-item"><img src="https://img.shields.io/badge/Bootstrap-7952B3?style=for-the-badge&logo=bootstrap&logoColor=white" alt="Bootstrap"><span>Bootstrap</span></div>
+        
+        <div class="fw-item"><img src="https://img.shields.io/badge/Git-F05032?style=for-the-badge&logo=git&logoColor=white" alt="Git"><span>Git</span></div>
+        
+        <div class="fw-item"><img src="https://img.shields.io/badge/Laravel-FF2D20?style=for-the-badge&logo=laravel&logoColor=white" alt="Laravel"><span>Laravel</span></div>
+        <div class="fw-item"><img src="https://img.shields.io/badge/JavaScript-F7DF1E?style=for-the-badge&logo=javascript&logoColor=black" alt="JavaScript"><span>JavaScript</span></div>
+        <div class="fw-item"><img src="https://img.shields.io/badge/Alpine.js-8BC0D0?style=for-the-badge&logo=alpinedotjs&logoColor=black" alt="Alpine.js"><span>Alpine.js</span></div>
+        <div class="fw-item"><img src="https://img.shields.io/badge/Tailwind_CSS-38B2AC?style=for-the-badge&logo=tailwind-css&logoColor=white" alt="Tailwind CSS"><span>Tailwind CSS</span></div>
+        <div class="fw-item"><img src="https://img.shields.io/badge/Bootstrap-7952B3?style=for-the-badge&logo=bootstrap&logoColor=white" alt="Bootstrap"><span>Bootstrap</span></div>
+        <div class="fw-item"><img src="https://img.shields.io/badge/Git-F05032?style=for-the-badge&logo=git&logoColor=white" alt="Git"><span>Git</span></div>
+    </div>
+</div>
+        </div>
+    </section>
 
+    <!-- ── OUTILS & COMPÉTENCES TRANSVERSALES ── (MODIFIÉ) -->
+    <section id="outils" class="section-outils">
+        <div class="container">
+            <div class="outils-header-row">
+                <div class="outils-col-title">
+                    <h2 class="section-title reveal-up">Outils <em>&</em> Services</h2>
+                </div>
+                <div class="outils-col-title">
+                    <h2 class="section-title reveal-up" style="animation-delay:.1s">Compétences <em>transversales</em></h2>
+                </div>
+            </div>
+        </div>
+        <div class="outils-two-col">
+            <!-- Constellation -->
+            <div class="constellation-wrap">
+                <div class="constellation">
+                    <div class="constellation-center"></div>
+                    <div class="constellation-ring ring-1">
+                        <div class="c-node" style="--angle:0deg;--r:160px">Git/Github</div>
+                        <div class="c-node" style="--angle:60deg;--r:160px">VsCode</div>
+                        <div class="c-node" style="--angle:120deg;--r:160px">Figma</div>
+                        <div class="c-node" style="--angle:180deg;--r:160px">Docker</div>
+                        <div class="c-node" style="--angle:240deg;--r:160px">Mysql</div>
+                        <div class="c-node" style="--angle:300deg;--r:160px">Vercel</div>
+                    </div>
+                    <div class="constellation-ring ring-2">
+                        <div class="c-node" style="--angle:20deg;--r:270px">WebSocket</div>
+                        <div class="c-node" style="--angle:70deg;--r:270px">LLM APIs</div>
+                        <div class="c-node" style="--angle:120deg;--r:270px">Supabase</div>
+                        <div class="c-node" style="--angle:170deg;--r:270px">Railway</div>
+                        <div class="c-node" style="--angle:220deg;--r:270px">Sepolia</div>
+                        <div class="c-node" style="--angle:270deg;--r:270px">PostgreSQL</div>
+                        <div class="c-node" style="--angle:320deg;--r:270px">PhpStorm</div>
+                    </div>
+                    <svg class="constellation-lines" viewBox="-300 -300 600 600">
+                        <circle cx="0" cy="0" r="160" fill="none" stroke="rgba(167,139,250,0.1)" stroke-width="1"/>
+                        <circle cx="0" cy="0" r="270" fill="none" stroke="rgba(167,139,250,0.06)" stroke-width="1"/>
+                        <line x1="0" y1="0" x2="0" y2="-160" stroke="rgba(167,139,250,0.09)" stroke-width="1"/>
+                        <line x1="0" y1="0" x2="138.6" y2="-80" stroke="rgba(167,139,250,0.09)" stroke-width="1"/>
+                        <line x1="0" y1="0" x2="138.6" y2="80" stroke="rgba(167,139,250,0.09)" stroke-width="1"/>
+                        <line x1="0" y1="0" x2="0" y2="160" stroke="rgba(167,139,250,0.09)" stroke-width="1"/>
+                        <line x1="0" y1="0" x2="-138.6" y2="80" stroke="rgba(167,139,250,0.09)" stroke-width="1"/>
+                        <line x1="0" y1="0" x2="-138.6" y2="-80" stroke="rgba(167,139,250,0.09)" stroke-width="1"/>
+                    </svg>
+                </div>
+            </div>
+            <!-- Compétences transversales -->
+            <div class="transversal-wrap reveal-up" style="animation-delay:.2s">
+                <div class="transversal-list">
+                    <div class="transversal-item">
+                        <div class="transversal-label">Architecture MVC</div>
+                        <div class="transversal-bar-wrap">
+                            <div class="transversal-bar"><div class="transversal-fill" style="--tw:85%"></div></div>
+                            <span class="transversal-pct">85%</span>
+                        </div>
+                    </div>
+                    <div class="transversal-item">
+                        <div class="transversal-label">REST API</div>
+                        <div class="transversal-bar-wrap">
+                            <div class="transversal-bar"><div class="transversal-fill" style="--tw:80%"></div></div>
+                            <span class="transversal-pct">80%</span>
+                        </div>
+                    </div>
+                    <div class="transversal-item">
+                        <div class="transversal-label">UX/UI Design</div>
+                        <div class="transversal-bar-wrap">
+                            <div class="transversal-bar"><div class="transversal-fill" style="--tw:75%"></div></div>
+                            <span class="transversal-pct">75%</span>
+                        </div>
+                    </div>
+                    <div class="transversal-item">
+                        <div class="transversal-label">Agile / Scrum</div>
+                        <div class="transversal-bar-wrap">
+                            <div class="transversal-bar"><div class="transversal-fill" style="--tw:78%"></div></div>
+                            <span class="transversal-pct">78%</span>
+                        </div>
+                    </div>
+                    <div class="transversal-item">
+                        <div class="transversal-label">Veille Tech</div>
+                        <div class="transversal-bar-wrap">
+                            <div class="transversal-bar"><div class="transversal-fill" style="--tw:90%"></div></div>
+                            <span class="transversal-pct">90%</span>
+                        </div>
+                    </div>
+                    <div class="transversal-item">
+                        <div class="transversal-label">RAG / IA appliquée</div>
+                        <div class="transversal-bar-wrap">
+                            <div class="transversal-bar"><div class="transversal-fill" style="--tw:60%"></div></div>
+                            <span class="transversal-pct">60%</span>
+                        </div>
+                    </div>
+                    <div class="transversal-item">
+                        <div class="transversal-label">SEO</div>
+                        <div class="transversal-bar-wrap">
+                            <div class="transversal-bar"><div class="transversal-fill" style="--tw:65%"></div></div>
+                            <span class="transversal-pct">65%</span>
+                        </div>
+                    </div>
+                    <div class="transversal-item">
+                        <div class="transversal-label">Architecture temps réel</div>
+                        <div class="transversal-bar-wrap">
+                            <div class="transversal-bar"><div class="transversal-fill" style="--tw:55%"></div></div>
+                            <span class="transversal-pct">55%</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
 
-    <!-- Section Contact -->
+    <!-- ── CERTIFICATIONS ── (MODIFIÉ: carousel avec flèches) -->
+
+<section id="certifications" class="section-certifications">
+    <div class="container">
+        <h2 class="section-title reveal-up">Validations de mes <em>compétences</em></h2>
+        <div class="cert-carousel-wrap reveal-up" style="animation-delay:.1s">
+            <button class="cert-arrow cert-arrow-left" onclick="certScroll(-1)" aria-label="Précédent">
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M15 18l-6-6 6-6"/></svg>
+            </button>
+            <div class="cert-carousel" id="certCarousel">
+                
+                <div class="cert-card">
+                    <div class="cert-glow"></div>
+                    <div class="cert-header">
+                        
+                        <div class="cert-badge cert-badge-progress">En cours</div>
+                    </div>
+                    <h3>BTS SIO SLAM</h3>
+                    <p>Développement d'applications web, Gestion de bases de données, Méthodologies Agile, Veille technologique.</p>
+                    <div class="cert-skills">
+                        <span>Web</span><span>SQL</span><span>Agile</span>
+                    </div>
+                </div>
+
+                <div class="cert-card">
+                    <div class="cert-glow"></div>
+                    <div class="cert-header">
+                     
+                        <div class="cert-badge cert-badge-done">✓ Obtenue</div>
+                    </div>
+                    <h3>L'Atelier RGPD</h3>
+                    <p>Maîtrise des notions clés du RGPD, responsabilités des acteurs et outils de conformité (DPO, Collectivités).</p>
+                    <div class="cert-skills">
+                        <span>RGPD</span><span>Droit Numérique</span><span>CNIL</span>
+                    </div>
+                </div>
+
+                <div class="cert-card cert-card-featured">
+                    <div class="cert-glow"></div>
+                    <div class="cert-header">
+                  
+                        <div class="cert-badge cert-badge-done">✓ Obtenue</div>
+                    </div>
+                    <h3>IBM : IA Générative</h3>
+                    <p>Parcours complet sur l'IA générative et son application spécifique pour les développeurs.</p>
+                    <div class="cert-skills">
+                        <span>IA</span><span>LLM</span><span>Prompt Eng.</span>
+                    </div>
+                </div>
+
+                <div class="cert-card">
+                    <div class="cert-glow"></div>
+                    <div class="cert-header">
+                     
+                        <div class="cert-badge cert-badge-done">✓ Obtenue</div>
+                    </div>
+                    <h3>OpenClassrooms</h3>
+                    <p>Deep Learning, Architecture d'API REST et Optimisation du référencement technique (SEO).</p>
+                    <div class="cert-skills">
+                        <span>API REST</span><span>SEO</span><span>Deep Learning</span>
+                    </div>
+                </div>
+
+                <div class="cert-card">
+                    <div class="cert-glow) "></div>
+                    <div class="cert-header">
+                        
+                        <div class="cert-badge cert-badge-done">✓ Obtenue</div>
+                    </div>
+                    <h3>freeCodeCamp</h3>
+                    <p>Certification JavaScript : Algorithmes, structures de données et programmation fonctionnelle.</p>
+                    <div class="cert-skills">
+                        <span>JavaScript</span><span>ES6</span><span>Algorithmes</span>
+                    </div>
+                </div>
+
+                <div class="cert-card">
+                    <div class="cert-glow"></div>
+                    <div class="cert-header">
+                      
+                        <div class="cert-badge cert-badge-done">✓ Obtenue</div>
+                    </div>
+                    <h3>PIX</h3>
+                    <p>Certification des compétences numériques : développement, sécurité et environnement numérique.</p>
+                    <div class="cert-skills">
+                        <span>Digital</span><span>Data</span><span>Cyber</span>
+                    </div>
+                </div>
+
+            </div>
+            <button class="cert-arrow cert-arrow-right" onclick="certScroll(1)" aria-label="Suivant">
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M9 18l6-6-6-6"/></svg>
+            </button>
+        </div>
+    </div>
+</section>
+
+    <!-- ── VEILLE TECHNOLOGIQUE ── (MODIFIÉ: liens PDF) -->
+ <section id="veille" class="section-veille">
+    <div class="container">
+        <h2 class="section-title reveal-up">Ma <em>méthodologie</em> de veille</h2>
+
+        <div class="veille-grid reveal-up" style="animation-delay:.1s">
+            <div class="veille-methodo">
+                <div class="veille-methodo-title">
+                    <span class="veille-icon">🧠</span>
+                    <h3>Sujets de veille</h3>
+                </div>
+                <p>Je maintiens une veille active sur les piliers de la transformation numérique :</p>
+                <ul class="veille-list">
+                    <li>Accessibilité Numérique et obligations légales 2025 [cite: 61]</li>
+                    <li>Souveraineté Numérique et Cloud européen [cite: 37, 45]</li>
+                    <li>Régulation de l'IA (AI Act) et conformité RIA [cite: 1, 22]</li>
+                    <li>Sécurité des identités (IAM, MFA) [cite: 14, 21]</li>
+                </ul>
+                <h4>Mes sources :</h4>
+                <div class="veille-sources">
+                    <span>Réglementations UE (AI Act, RGPD) [cite: 20]</span>
+                    <span>Plan France 2030 [cite: 45]</span>
+                    <span>Référentiels de sécurité (SecNumCloud) [cite: 44]</span>
+                    <span>Actualités technologiques (IA Weekly)</span>
+                </div>
+            </div>
+
+            <div class="veille-articles">
+                <div class="veille-article">
+                    <div class="veille-article-header">
+                        <h4>♿ Accessibilité Numérique</h4>
+                        <span class="veille-dot"></span>
+                    </div>
+                    <p>Anticiper l'obligation du 28 juin 2025 : accessibilité des services pour les 15% de la population en situation de handicap[cite: 61, 66, 80].</p>
+                    <a href="Images/Affiche%20Naylis%20Sabrina.pdf" target="_blank" class="btn-veille">
+                        <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/><polyline points="14 2 14 8 20 8"/></svg>
+                        Lire ma synthèse
+                    </a>
+                </div>
+
+                <div class="veille-article">
+                    <div class="veille-article-header">
+                        <h4>🇫🇷 Souveraineté Numérique</h4>
+                        <span class="veille-dot"></span>
+                    </div>
+                    <p>Analyse de la dépendance européenne : 80% des contrats publics dépendent de fournisseurs américains[cite: 37, 47, 48].</p>
+                    <a href="Images/1%20Affiche%20Sabrina.pdf" target="_blank" class="btn-veille">
+                        <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/><polyline points="14 2 14 8 20 8"/></svg>
+                        Lire ma synthèse
+                    </a>
+                </div>
+
+                <div class="veille-article">
+                    <div class="veille-article-header">
+                        <h4>🤖 IA Act & Régulation RIA</h4>
+                        <span class="veille-dot"></span>
+                    </div>
+                    <p>Maîtriser la conformité au Règlement sur l'Identité et l'Authentification (RIA) et la sécurité par le risque[cite: 2, 22].</p>
+                    <a href="Images/Affiche_Sabrina.pdf" target="_blank" class="btn-veille">
+                        <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/><polyline points="14 2 14 8 20 8"/></svg>
+                        Lire ma synthèse
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+    <!-- ── PROJETS ── -->
+<section id="projets" class="section-projets">
+<div class="container">
+  <h2 class="section-title reveal-up">Mes <em>réalisations</em></h2>
+  <p class="section-sub reveal-up" style="animation-delay:.05s">Naviguez parmi mes projets avec les flèches ou les filtres</p>
+ 
+  <!-- FILTRES -->
+  <div class="proj-filters reveal-up" style="animation-delay:.1s">
+    <button class="filter-btn active" data-filter="all">Tous</button>
+    <button class="filter-btn" data-filter="api">API / Backend</button>
+    <button class="filter-btn" data-filter="design">UX / Design</button>
+    <button class="filter-btn" data-filter="web">Web</button>
+    <button class="filter-btn" data-filter="laravel">Laravel</button>
+    <button class="filter-btn" data-filter="python">Python</button>
+    <button class="filter-btn" data-filter="devops">DevOps</button>
+  </div>
+ 
+  <!-- CARROUSEL -->
+  <div class="carousel-wrapper reveal-up" style="animation-delay:.15s">
+    <button class="carousel-arrow carousel-prev" id="carouselPrev" aria-label="Précédent">&#8592;</button>
+ 
+    <div class="carousel-track-outer">
+      <div class="carousel-track" id="carouselTrack">
+ 
+        <!-- 1. API Citations -->
+        <article class="proj-card" data-cat="api" data-modal="m-api">
+          <div class="proj-preview">
+            <div class="proj-preview-bg proj-preview-api">
+              <div class="preview-mock">
+                <div class="mock-bar"><span></span><span></span><span></span></div>
+                <div class="mock-content">
+                  <div class="mock-line mock-line-url">GET /api/citations</div>
+                  <div class="mock-response">
+                    <span class="mock-key">"id":</span> <span class="mock-val">1,</span><br>
+                    <span class="mock-key">"text":</span> <span class="mock-val">"La vie est belle"</span><br>
+                    <span class="mock-key">"author":</span> <span class="mock-val">"Sabrina"</span>
+                  </div>
+                  <div class="mock-status">200 OK</div>
+                </div>
+              </div>
+            </div>
+            <div class="proj-overlay"><span class="proj-open-btn">Voir le projet →</span></div>
+          </div>
+          <div class="proj-info">
+            <div class="proj-meta-top"><span class="proj-cat-badge">API REST</span><span class="proj-year">2025</span></div>
+            <h3>API Citations</h3>
+            <p>API REST complète — CRUD, pagination et filtrage avancé.</p>
+            <div class="proj-tags"><span>Node.js</span><span>SQLite</span><span>Postman</span></div>
+          </div>
+        </article>
+ 
+        <!-- 2. ASTRA -->
+        <article class="proj-card" data-cat="web" data-modal="m-astra">
+          <div class="proj-preview">
+            <div class="proj-preview-bg" style="background:radial-gradient(ellipse at 60% 40%,#1a0640 0%,#02020a 70%)">
+              <div class="preview-mock">
+                <div class="mock-bar"><span></span><span></span><span></span></div>
+                <div style="padding:12px;text-align:center">
+                  <div style="font-size:1rem;font-weight:800;letter-spacing:.3em;color:#c9a84c;text-transform:uppercase;margin-bottom:4px">ASTRA</div>
+                  <div style="font-size:.5rem;color:#a8b4c8;letter-spacing:.15em;margin-bottom:10px">EXPLORATION SPATIALE · 2047</div>
+                  <div style="width:40px;height:40px;border-radius:50%;background:radial-gradient(circle at 35% 35%,#1a1040,#0d2050);box-shadow:0 0 16px rgba(201,168,76,.4);margin:0 auto 8px;border:1px solid rgba(201,168,76,.2)"></div>
+                  <div style="font-size:.48rem;color:#c9a84c;letter-spacing:.1em">THREE.JS · SHADERS · 3D</div>
+                </div>
+              </div>
+            </div>
+            <div class="proj-overlay"><span class="proj-open-btn">Voir le projet →</span></div>
+          </div>
+          <div class="proj-info">
+            <div class="proj-meta-top"><span class="proj-cat-badge" style="background:rgba(201,168,76,.15);color:#c9a84c">3D / Web</span><span class="proj-year">2025</span></div>
+            <h3>ASTRA — Site Spatial</h3>
+            <p>Landing page immersive avec planète 3D procédurale et champ d'étoiles.</p>
+            <div class="proj-tags"><span>Three.js</span><span>GLSL</span><span>Vanilla JS</span></div>
+          </div>
+        </article>
+ 
+        <!-- 3. Chatbot Commande -->
+        <article class="proj-card" data-cat="api" data-modal="m-chatbot">
+          <div class="proj-preview">
+            <div class="proj-preview-bg" style="background:linear-gradient(135deg,#0f172a 0%,#1e1b4b 100%)">
+              <div class="preview-mock">
+                <div class="mock-bar"><span></span><span></span><span></span></div>
+                <div style="padding:10px;font-size:.65rem">
+                  <div style="color:#818cf8;margin-bottom:6px;font-size:.6rem">🤖 Chatbot Commande</div>
+                  <div style="background:rgba(99,102,241,.1);border-radius:6px;padding:6px;margin-bottom:4px;color:#c7d2fe"><span style="color:#818cf8">User:</span> Je veux 2 pizzas</div>
+                  <div style="background:rgba(99,102,241,.2);border-radius:6px;padding:6px;color:#e0e7ff"><span style="color:#a5b4fc">Bot:</span> Commande enregistrée ✓</div>
+                  <div style="color:#4ade80;font-size:.5rem;margin-top:6px">SQLite · orders.db</div>
+                </div>
+              </div>
+            </div>
+            <div class="proj-overlay"><span class="proj-open-btn">Voir le projet →</span></div>
+          </div>
+          <div class="proj-info">
+            <div class="proj-meta-top"><span class="proj-cat-badge" style="background:rgba(99,102,241,.15);color:#a5b4fc">Chatbot / IA</span><span class="proj-year">2025</span></div>
+            <h3>Chatbot Commande</h3>
+            <p>Prise de commandes intelligente via NLP Cohere et stockage SQLite.</p>
+            <div class="proj-tags"><span>Python</span><span>Cohere API</span><span>SQLite</span></div>
+          </div>
+        </article>
+ 
+        <!-- 4. BiblioTech -->
+        <article class="proj-card" data-cat="laravel" data-modal="m-bibliotech">
+          <div class="proj-preview">
+            <div class="proj-preview-bg proj-preview-laravel">
+              <div class="preview-mock">
+                <div class="mock-bar"><span></span><span></span><span></span></div>
+                <div style="padding:10px">
+                  <div style="font-size:.6rem;color:#f87171;margin-bottom:6px">📚 BiblioTech</div>
+                  <div style="display:grid;grid-template-columns:1fr 1fr;gap:4px">
+                    <div style="background:rgba(248,113,113,.1);border-radius:4px;padding:6px;font-size:.55rem;color:#fca5a5;text-align:center">Livres<br><strong>320</strong></div>
+                    <div style="background:rgba(248,113,113,.1);border-radius:4px;padding:6px;font-size:.55rem;color:#fca5a5;text-align:center">Séances<br><strong>5 ✅</strong></div>
+                  </div>
+                  <div style="font-size:.5rem;color:#fca5a5;margin-top:6px">MVC · Eloquent · Auth</div>
+                </div>
+              </div>
+            </div>
+            <div class="proj-overlay"><span class="proj-open-btn">Voir le projet →</span></div>
+          </div>
+          <div class="proj-info">
+            <div class="proj-meta-top"><span class="proj-cat-badge" style="background:rgba(248,113,113,.15);color:#fca5a5">Laravel</span><span class="proj-year">BTS SIO</span></div>
+            <h3>BiblioTech</h3>
+            <p>Gestion de bibliothèque en 5 séances — MVC, Eloquent, auth, rôles, CI/CD.</p>
+            <div class="proj-tags"><span>Laravel</span><span>SQLite</span><span>Bootstrap</span></div>
+          </div>
+        </article>
+ 
+        <!-- 5. Site ERP -->
+        <article class="proj-card" data-cat="web" data-modal="m-erp">
+          <div class="proj-preview">
+            <div class="proj-preview-bg" style="background:linear-gradient(135deg,#052e16 0%,#14532d 100%)">
+              <div class="preview-mock">
+                <div class="mock-bar"><span></span><span></span><span></span></div>
+                <div style="padding:10px;font-size:.65rem">
+                  <div style="color:#4ade80;margin-bottom:6px;font-size:.6rem">⚙️ Site-ERP</div>
+                  <div style="display:flex;gap:4px;margin-bottom:4px;flex-wrap:wrap">
+                    <div style="background:rgba(74,222,128,.1);border:1px solid rgba(74,222,128,.2);border-radius:4px;padding:3px 6px;color:#86efac;font-size:.5rem">AdonisJS API</div>
+                    <div style="background:rgba(74,222,128,.1);border:1px solid rgba(74,222,128,.2);border-radius:4px;padding:3px 6px;color:#86efac;font-size:.5rem">React UI</div>
+                  </div>
+                  <div style="color:#a7f3d0;font-size:.5rem">Auth · Middleware · Lucid ORM</div>
+                </div>
+              </div>
+            </div>
+            <div class="proj-overlay"><span class="proj-open-btn">Voir le projet →</span></div>
+          </div>
+          <div class="proj-info">
+            <div class="proj-meta-top"><span class="proj-cat-badge" style="background:rgba(74,222,128,.15);color:#86efac">Full-Stack</span><span class="proj-year">2025</span></div>
+            <h3>Site ERP</h3>
+            <p>Application ERP full-stack — AdonisJS TypeScript + React avec auth & Lucid ORM.</p>
+            <div class="proj-tags"><span>AdonisJS</span><span>TypeScript</span><span>React</span></div>
+          </div>
+        </article>
+ 
+        <!-- 6. RIA Check & Go -->
+        <article class="proj-card" data-cat="web" data-modal="m-ria">
+          <div class="proj-preview">
+            <div class="proj-preview-bg" style="background:linear-gradient(135deg,#1e3a5f 0%,#0f1e3a 100%)">
+              <div class="preview-mock">
+                <div class="mock-bar"><span></span><span></span><span></span></div>
+                <div style="padding:10px;font-size:.65rem">
+                  <div style="color:#60a5fa;margin-bottom:4px;font-size:.6rem">🇪🇺 RIA Check & Go</div>
+                  <div style="background:rgba(96,165,250,.08);border:1px solid rgba(96,165,250,.2);border-radius:6px;padding:6px;margin-bottom:4px">
+                    <div style="color:#93c5fd;font-size:.5rem">✓ Classification des risques</div>
+                    <div style="color:#93c5fd;font-size:.5rem">✓ Documentation Annexe IV</div>
+                    <div style="color:#93c5fd;font-size:.5rem">✓ Rapport PDF conformité</div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="proj-overlay"><span class="proj-open-btn">Voir le projet →</span></div>
+          </div>
+          <div class="proj-info">
+            <div class="proj-meta-top"><span class="proj-cat-badge" style="background:rgba(59,130,246,.15);color:#93c5fd">SaaS / Conformité</span><span class="proj-year">2025</span></div>
+            <h3>RIA Check & Go</h3>
+            <p>Conformité au Règlement IA européen — diagnostic 15 min, rapports PDF.</p>
+            <div class="proj-tags"><span>HTML/CSS/JS</span><span>AI Act</span><span>RGPD</span></div>
+          </div>
+        </article>
+ 
+        <!-- 7. Gestion des Congés -->
+        <article class="proj-card" data-cat="devops" data-modal="m-conges">
+          <div class="proj-preview">
+            <div class="proj-preview-bg" style="background:linear-gradient(135deg,#0c1445 0%,#1d4ed8 60%,#0c1445 100%)">
+              <div class="preview-mock">
+                <div class="mock-bar"><span></span><span></span><span></span></div>
+                <div style="padding:10px;font-size:.65rem">
+                  <div style="color:#93c5fd;margin-bottom:6px;font-size:.6rem">🐳 Docker PHP/MySQL</div>
+                  <div style="display:flex;gap:4px;flex-wrap:wrap">
+                    <div style="background:rgba(147,197,253,.1);border-radius:4px;padding:4px 6px;font-size:.5rem;color:#bfdbfe">Apache/PHP</div>
+                    <div style="background:rgba(147,197,253,.1);border-radius:4px;padding:4px 6px;font-size:.5rem;color:#bfdbfe">MySQL</div>
+                    <div style="background:rgba(147,197,253,.1);border-radius:4px;padding:4px 6px;font-size:.5rem;color:#bfdbfe">Compose</div>
+                  </div>
+                  <div style="color:#60a5fa;font-size:.5rem;margin-top:6px">:8080 · Clients · Commandes</div>
+                </div>
+              </div>
+            </div>
+            <div class="proj-overlay"><span class="proj-open-btn">Voir le projet →</span></div>
+          </div>
+          <div class="proj-info">
+            <div class="proj-meta-top"><span class="proj-cat-badge" style="background:rgba(59,130,246,.15);color:#93c5fd">DevOps</span><span class="proj-year">2025</span></div>
+            <h3>Gestion des Congés</h3>
+            <p>App PHP/MySQL Dockerisée — multi-conteneurs orchestrés par Docker Compose.</p>
+            <div class="proj-tags"><span>Docker</span><span>PHP</span><span>MySQL</span></div>
+          </div>
+        </article>
+ 
+        <!-- 8. GLPI -->
+        <article class="proj-card" data-cat="devops" data-modal="m-glpi">
+          <div class="proj-preview">
+            <div class="proj-preview-bg" style="background:linear-gradient(135deg,#1a1a2e 0%,#16213e 50%,#0f3460 100%)">
+              <div class="preview-mock">
+                <div class="mock-bar"><span></span><span></span><span></span></div>
+                <div style="padding:10px;font-size:.65rem">
+                  <div style="color:#e2b96f;margin-bottom:6px;font-size:.6rem">🖥️ GLPI</div>
+                  <div style="display:grid;grid-template-columns:1fr 1fr;gap:4px">
+                    <div style="background:rgba(226,185,111,.08);border-radius:4px;padding:5px;font-size:.5rem;color:#fcd34d;text-align:center">Tickets<br><strong>🎫</strong></div>
+                    <div style="background:rgba(226,185,111,.08);border-radius:4px;padding:5px;font-size:.5rem;color:#fcd34d;text-align:center">Actifs<br><strong>📦</strong></div>
+                  </div>
+                  <div style="color:#92a3c0;font-size:.5rem;margin-top:6px">LAMP · Debian · VM</div>
+                </div>
+              </div>
+            </div>
+            <div class="proj-overlay"><span class="proj-open-btn">Voir le projet →</span></div>
+          </div>
+          <div class="proj-info">
+            <div class="proj-meta-top"><span class="proj-cat-badge" style="background:rgba(226,185,111,.15);color:#fcd34d">Sysadmin</span><span class="proj-year">2025</span></div>
+            <h3>GLPI</h3>
+            <p>Déploiement GLPI sur stack LAMP — parc informatique, tickets, inventaire.</p>
+            <div class="proj-tags"><span>Linux</span><span>Apache</span><span>MariaDB</span></div>
+          </div>
+        </article>
+ 
+        <!-- 9. Figma TechSolutions -->
+        <article class="proj-card" data-cat="design" data-modal="m-figma">
+          <div class="proj-preview">
+            <div class="proj-preview-bg proj-preview-figma">
+              <div class="preview-mock preview-mock-ui">
+                <div class="mock-bar"><span></span><span></span><span></span></div>
+                <div class="mock-ui-header">🎨 TechSolutions — Tickets</div>
+                <div class="mock-ui-row"><div class="mock-ui-badge" style="background:#a78bfa22;color:#a78bfa">Nouveau</div><span>Ticket #042</span></div>
+                <div class="mock-ui-row"><div class="mock-ui-badge" style="background:#f59e0b22;color:#f59e0b">En cours</div><span>Ticket #041</span></div>
+                <div class="mock-ui-row"><div class="mock-ui-badge" style="background:#10b98122;color:#10b981">Résolu</div><span>Ticket #040</span></div>
+              </div>
+            </div>
+            <div class="proj-overlay"><span class="proj-open-btn">Voir le projet →</span></div>
+          </div>
+          <div class="proj-info">
+            <div class="proj-meta-top"><span class="proj-cat-badge" style="background:rgba(167,139,250,.15);color:#c4b5fd">UX / Design</span><span class="proj-year">2025</span></div>
+            <h3>Figma TechSolutions</h3>
+            <p>Gestion de tickets IT — UX professionnelle avec diagramme de flux interactif.</p>
+            <div class="proj-tags"><span>Figma</span><span>Vite</span><span>Composants</span></div>
+          </div>
+        </article>
+ 
+        <!-- 10. CCF Python BoutikPro -->
+        <article class="proj-card" data-cat="python" data-modal="m-python">
+          <div class="proj-preview">
+            <div class="proj-preview-bg" style="background:linear-gradient(135deg,#1c1f26 0%,#2d3748 100%)">
+              <div class="preview-mock">
+                <div class="mock-bar"><span></span><span></span><span></span></div>
+                <div style="padding:10px;font-size:.65rem">
+                  <div style="color:#f6c90e;margin-bottom:4px;font-size:.6rem">🐍 BoutikPro — CCF Python</div>
+                  <div style="background:rgba(246,201,14,.08);border-radius:4px;padding:6px;font-size:.5rem;color:#fde68a;margin-bottom:4px">DB-API · SQLAlchemy Core · ORM<br>MySQL · UML · Merise · MCD→MLD</div>
+                  <div style="color:#6ee7b7;font-size:.5rem">CRUD · Clients · Commandes</div>
+                </div>
+              </div>
+            </div>
+            <div class="proj-overlay"><span class="proj-open-btn">Voir le projet →</span></div>
+          </div>
+          <div class="proj-info">
+            <div class="proj-meta-top"><span class="proj-cat-badge" style="background:rgba(246,201,14,.15);color:#fde68a">Python / BDD</span><span class="proj-year">CCF BTS</span></div>
+            <h3>BoutikPro — CCF Python</h3>
+            <p>Gestion commerciale — Merise (MCD→MLD), CRUD Python MySQL, SQLAlchemy.</p>
+            <div class="proj-tags"><span>Python</span><span>MySQL</span><span>SQLAlchemy</span></div>
+          </div>
+        </article>
+ 
+        <!-- 11. RGAA -->
+        <article class="proj-card" data-cat="web" data-modal="m-rgaa">
+          <div class="proj-preview">
+            <div class="proj-preview-bg proj-preview-access">
+              <div class="preview-mock">
+                <div class="mock-bar"><span></span><span></span><span></span></div>
+                <div style="padding:12px;font-size:.7rem">
+                  <div style="background:rgba(251,191,36,.1);border:1px solid rgba(251,191,36,.3);border-radius:6px;padding:8px;margin-bottom:8px;color:#fbbf24">♿ RGAA 4.1.2</div>
+                  <div style="color:#a78bfa;font-size:.65rem">✓ Navigation clavier<br>✓ Lecteurs d'écran<br>✓ Contraste AAA</div>
+                </div>
+              </div>
+            </div>
+            <div class="proj-overlay"><span class="proj-open-btn">Voir le projet →</span></div>
+          </div>
+          <div class="proj-info">
+            <div class="proj-meta-top"><span class="proj-cat-badge" style="background:rgba(251,191,36,.15);color:#fbbf24">Accessibilité</span><span class="proj-year">2025</span></div>
+            <h3>RGAA 4.1.2</h3>
+            <p>Bonnes pratiques d'accessibilité web — sémantique, WAI-ARIA, lecteurs d'écran.</p>
+            <div class="proj-tags"><span>HTML</span><span>CSS</span><span>WAI-ARIA</span></div>
+          </div>
+        </article>
+ 
+        <!-- 12. Portfolio BTS -->
+        <article class="proj-card" data-cat="web" data-modal="m-portfolio">
+          <div class="proj-preview">
+            <div class="proj-preview-bg proj-preview-portfolio">
+              <div class="preview-mock">
+                <div class="mock-bar"><span></span><span></span><span></span></div>
+                <div style="padding:10px;text-align:center">
+                  <div style="font-size:1.2rem;font-weight:700;color:#c4b5fd;margin-bottom:4px">SP</div>
+                  <div style="font-size:.6rem;color:#8b5cf6">Portfolio BTS</div>
+                  <div style="display:flex;gap:4px;justify-content:center;margin-top:8px">
+                    <div style="width:30px;height:4px;background:#a78bfa;border-radius:2px"></div>
+                    <div style="width:20px;height:4px;background:rgba(167,139,250,.3);border-radius:2px"></div>
+                    <div style="width:20px;height:4px;background:rgba(167,139,250,.3);border-radius:2px"></div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="proj-overlay"><span class="proj-open-btn">Voir le projet →</span></div>
+          </div>
+          <div class="proj-info">
+            <div class="proj-meta-top"><span class="proj-cat-badge" style="background:rgba(139,92,246,.15);color:#a78bfa">Portfolio</span><span class="proj-year">2025</span></div>
+            <h3>Portfolio BTS</h3>
+            <p>Ce portfolio — conception et développement complet pour présenter mes compétences.</p>
+            <div class="proj-tags"><span>HTML</span><span>CSS</span><span>JavaScript</span></div>
+          </div>
+        </article>
+ 
+        <!-- 13. App de Gestion Stage -->
+        <article class="proj-card" data-cat="laravel" data-modal="m-stage">
+          <div class="proj-preview">
+            <div class="proj-preview-bg proj-preview-laravel">
+              <div class="preview-mock">
+                <div class="mock-bar"><span></span><span></span><span></span></div>
+                <div style="padding:10px">
+                  <div style="font-size:.6rem;color:#f87171;margin-bottom:6px">🔴 Laravel — Stage</div>
+                  <div style="display:grid;grid-template-columns:1fr 1fr;gap:4px">
+                    <div style="background:rgba(248,113,113,.1);border-radius:4px;padding:6px;font-size:.55rem;color:#fca5a5;text-align:center">Users<br><strong>142</strong></div>
+                    <div style="background:rgba(248,113,113,.1);border-radius:4px;padding:6px;font-size:.55rem;color:#fca5a5;text-align:center">Rôles<br><strong>3</strong></div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="proj-overlay"><span class="proj-open-btn">Voir le projet →</span></div>
+          </div>
+          <div class="proj-info">
+            <div class="proj-meta-top"><span class="proj-cat-badge" style="background:rgba(248,113,113,.15);color:#fca5a5">Laravel</span><span class="proj-year">Stage</span></div>
+            <h3>App de Gestion</h3>
+            <p>Application full-stack — authentification, rôles utilisateurs, tableau de bord.</p>
+            <div class="proj-tags"><span>Laravel</span><span>MySQL</span><span>Tailwind</span></div>
+          </div>
+        </article>
+ 
+        <!-- 14. WordPress E-commerce -->
+        <article class="proj-card proj-wip" data-cat="web" data-modal="m-wordpress">
+          <div class="proj-preview">
+            <div class="proj-preview-bg" style="background:linear-gradient(135deg,#21759b 0%,#0d4f6c 100%)">
+              <div class="preview-mock">
+                <div class="mock-bar"><span></span><span></span><span></span></div>
+                <div style="padding:10px;text-align:center">
+                  <div style="font-size:1rem;color:#7dd3fc;margin-bottom:4px">🛒</div>
+                  <div style="font-size:.6rem;color:#38bdf8;font-weight:600;margin-bottom:4px">WordPress · WooCommerce</div>
+                  <div style="background:rgba(56,189,248,.1);border:1px dashed rgba(56,189,248,.3);border-radius:6px;padding:6px;font-size:.5rem;color:#7dd3fc">🚧 En cours · OVH</div>
+                </div>
+              </div>
+            </div>
+            <div class="proj-overlay"><span class="proj-open-btn">En cours →</span></div>
+          </div>
+          <div class="proj-info">
+            <div class="proj-meta-top"><span class="proj-cat-badge" style="background:rgba(56,189,248,.15);color:#7dd3fc">E-commerce</span><span class="proj-year" style="color:#f59e0b">🚧 WIP</span></div>
+            <h3>Site E-commerce</h3>
+            <p>Site e-commerce WordPress hébergé sur OVH — WooCommerce, en développement.</p>
+            <div class="proj-tags"><span>WordPress</span><span>WooCommerce</span><span>OVH</span></div>
+          </div>
+        </article>
+ 
+      </div><!-- /carousel-track -->
+    </div><!-- /carousel-track-outer -->
+ 
+    <button class="carousel-arrow carousel-next" id="carouselNext" aria-label="Suivant">&#8594;</button>
+  </div><!-- /carousel-wrapper -->
+ 
+  <!-- INDICATEURS -->
+  <div class="carousel-dots" id="carouselDots"></div>
+  <p class="carousel-counter" id="carouselCounter"></p>
+ 
+</div>
+</section>
+ 
+<!-- ═══════════════════════════════════════════
+     MODALES — toutes les 14
+═══════════════════════════════════════════ -->
+ 
+<!-- Modale API Citations -->
+<div class="modal-overlay" id="m-api" role="dialog" aria-modal="true">
+  <div class="modal-box">
+    <button class="modal-close" onclick="closeModal('m-api')">✕</button>
+    <div class="modal-header modal-header-api">
+      <span class="modal-badge">API REST · 2025</span>
+      <h3>API Citations</h3>
+    </div>
+    <div class="modal-body">
+      <p>Développement d'une API REST complète pour gérer des citations inspirantes. Le projet couvre le cycle complet : modélisation de la base, conception des endpoints, documentation Postman et gestion des erreurs.</p>
+      <div class="modal-section">
+        <h4>Fonctionnalités</h4>
+        <ul>
+          <li>CRUD complet sur les citations (GET, POST, PUT, DELETE)</li>
+          <li>Pagination et filtrage avancé par auteur, tag, longueur</li>
+          <li>Endpoint aléatoire avec pondération</li>
+          <li>Gestion d'erreurs normalisée (codes HTTP, messages JSON)</li>
+        </ul>
+      </div>
+      <div class="modal-tags"><span>Node.js</span><span>SQLite</span><span>Postman</span><span>REST</span></div>
+      <div class="modal-links">
+        <a href="https://github.com/BTS2-SIO-SLAM-LSW/mission-1-api-citations-Sa6rinaa" target="_blank" class="modal-btn modal-btn-ghost">GitHub ↗</a>
+      </div>
+    </div>
+  </div>
+</div>
+ 
+<!-- Modale ASTRA -->
+<div class="modal-overlay" id="m-astra" role="dialog" aria-modal="true">
+  <div class="modal-box">
+    <button class="modal-close" onclick="closeModal('m-astra')">✕</button>
+    <div class="modal-header" style="background:radial-gradient(ellipse at 60% 40%,#2a0e60 0%,#02020a 100%)">
+      <span class="modal-badge">3D / Web · 2025</span>
+      <h3>ASTRA — Site Spatial</h3>
+    </div>
+    <div class="modal-body">
+      <p>Landing page immersive d'une agence d'exploration spatiale fictive en 2047. Combine Three.js pour le rendu 3D temps réel et un design éditorial luxe inspiré des films de SF (Interstellar, Arrival).</p>
+      <div class="modal-section">
+        <h4>Points techniques</h4>
+        <ul>
+          <li>Planète 3D avec fragment shader procédural (noise, Fresnel, rotation UV)</li>
+          <li>Champ de 8 000 étoiles avec scintillement via sin(time + position)</li>
+          <li>Atmosphère glow, anneaux orbitaux, lune en orbite, ceinture d'astéroïdes</li>
+          <li>Parallaxe souris avec lerp doux + auto-rotation de scène</li>
+          <li>Curseur personnalisé avec anneau suiveur décalé</li>
+        </ul>
+      </div>
+      <div class="modal-tags"><span>Three.js r128</span><span>GLSL Shaders</span><span>Vanilla JS</span><span>CSS</span></div>
+      <div class="modal-links">
+        <a href="https://sa6rinaa.github.io/Astra/" target="_blank" class="modal-btn modal-btn-primary">Voir la démo ↗</a>
+        <a href="https://github.com/Sa6rinaa/Astra" target="_blank" class="modal-btn modal-btn-ghost">GitHub ↗</a>
+      </div>
+    </div>
+  </div>
+</div>
+ 
+<!-- Modale Chatbot -->
+<div class="modal-overlay" id="m-chatbot" role="dialog" aria-modal="true">
+  <div class="modal-box">
+    <button class="modal-close" onclick="closeModal('m-chatbot')">✕</button>
+    <div class="modal-header" style="background:linear-gradient(135deg,#0f172a,#1e1b4b)">
+      <span class="modal-badge">Chatbot / IA · 2025</span>
+      <h3>Chatbot Commande</h3>
+    </div>
+    <div class="modal-body">
+      <p>Chatbot intelligent de prise de commandes automatisée utilisant le NLP de Cohere pour comprendre les intentions utilisateur en langage naturel.</p>
+      <div class="modal-section">
+        <h4>Architecture</h4>
+        <ul>
+          <li><strong>app.py</strong> — Interface Streamlit / Flask</li>
+          <li><strong>chatbot.py</strong> — Traitement des messages et appel API Cohere</li>
+          <li><strong>traiter_commande.py</strong> — Extraction et validation des données</li>
+          <li><strong>orders.db</strong> — Historique SQLite des commandes</li>
+        </ul>
+      </div>
+      <div class="modal-tags"><span>Python</span><span>Cohere API</span><span>SQLite</span><span>Streamlit</span></div>
+      <div class="modal-links">
+        <a href="https://github.com/Sa6rinaa/Commande" target="_blank" class="modal-btn modal-btn-ghost">GitHub ↗</a>
+      </div>
+    </div>
+  </div>
+</div>
+ 
+<!-- Modale BiblioTech -->
+<div class="modal-overlay" id="m-bibliotech" role="dialog" aria-modal="true">
+  <div class="modal-box">
+    <button class="modal-close" onclick="closeModal('m-bibliotech')">✕</button>
+    <div class="modal-header" style="background:linear-gradient(135deg,#3b0000,#7f1d1d)">
+      <span class="modal-badge">Laravel · BTS SIO</span>
+      <h3>BiblioTech</h3>
+    </div>
+    <div class="modal-body">
+      <p>Application de gestion de bibliothèque moderne développée en 5 séances progressives pour la formation BTS SIO SLAM, couvrant tous les aspects du développement web professionnel.</p>
+      <div class="modal-section">
+        <h4>5 séances complètes</h4>
+        <ul>
+          <li>S1 — MVC, routes, templates Blade</li>
+          <li>S2 — Base de données SQLite, migrations, Eloquent ORM</li>
+          <li>S3 — CRUD, formulaires, validation, sessions</li>
+          <li>S4 — Authentification, middleware, rôles & permissions</li>
+          <li>S5 — Production, tests, CI/CD, SonarCloud</li>
+        </ul>
+      </div>
+      <div class="modal-tags"><span>Laravel 12</span><span>SQLite</span><span>Bootstrap 5</span><span>CI/CD</span><span>SonarCloud</span></div>
+      <div class="modal-links">
+        <a href="https://github.com/Sa6rinaa/Bibliotech_Laravel" target="_blank" class="modal-btn modal-btn-ghost">GitHub ↗</a>
+      </div>
+    </div>
+  </div>
+</div>
+ 
+<!-- Modale Site ERP -->
+<div class="modal-overlay" id="m-erp" role="dialog" aria-modal="true">
+  <div class="modal-box">
+    <button class="modal-close" onclick="closeModal('m-erp')">✕</button>
+    <div class="modal-header" style="background:linear-gradient(135deg,#052e16,#14532d)">
+      <span class="modal-badge">Full-Stack · 2025</span>
+      <h3>Site ERP</h3>
+    </div>
+    <div class="modal-body">
+      <p>Application ERP de démonstration avec une architecture full-stack découplée : backend API REST AdonisJS en TypeScript et frontend React, pensés pour illustrer un système de gestion d'entreprise évolutif.</p>
+      <div class="modal-section">
+        <h4>Architecture</h4>
+        <ul>
+          <li>Backend AdonisJS 6 + TypeScript — controllers, modèles Lucid, middleware</li>
+          <li>Authentification utilisateur avec gestion de tokens</li>
+          <li>Frontend React — composants, routing, interface publique</li>
+          <li>API REST complète avec configuration CORS</li>
+          <li>Migrations base de données pour users et access tokens</li>
+        </ul>
+      </div>
+      <div class="modal-tags"><span>AdonisJS 6</span><span>TypeScript</span><span>React</span><span>MySQL</span><span>Lucid ORM</span></div>
+      <div class="modal-links">
+        <a href="https://github.com/Sa6rinaa/Site-ERP" target="_blank" class="modal-btn modal-btn-ghost">GitHub ↗</a>
+      </div>
+    </div>
+  </div>
+</div>
+ 
+<!-- Modale RIA Check & Go -->
+<div class="modal-overlay" id="m-ria" role="dialog" aria-modal="true">
+  <div class="modal-box">
+    <button class="modal-close" onclick="closeModal('m-ria')">✕</button>
+    <div class="modal-header" style="background:linear-gradient(135deg,#1e3a5f,#0f1e3a)">
+      <span class="modal-badge">SaaS · 2025</span>
+      <h3>RIA Check & Go</h3>
+    </div>
+    <div class="modal-body">
+      <p>Solution SaaS française dédiée à la mise en conformité des systèmes d'IA avec le Règlement IA européen (AI Act). Guide les entreprises de la classification initiale des risques jusqu'à l'enregistrement officiel auprès de l'UE.</p>
+      <div class="modal-section">
+        <h4>Modules</h4>
+        <ul>
+          <li>Classification des risques — questionnaire basé sur les Annexes II & III du RIA</li>
+          <li>Système de gestion des risques (Article 10)</li>
+          <li>Documentation technique conforme à l'Annexe IV</li>
+          <li>Rapport PDF de conformité avec plan d'actions personnalisé</li>
+          <li>Accompagnement pour l'enregistrement officiel UE</li>
+        </ul>
+      </div>
+      <div class="modal-tags"><span>HTML/CSS/JS</span><span>AI Act</span><span>RGPD</span><span>PDF</span></div>
+      <div class="modal-links">
+        <a href="https://sa6rinaa.github.io/RIA-Check-Go/" target="_blank" class="modal-btn modal-btn-primary">Voir la démo ↗</a>
+        <a href="https://github.com/Sa6rinaa/RIA-Check-Go" target="_blank" class="modal-btn modal-btn-ghost">GitHub ↗</a>
+      </div>
+    </div>
+  </div>
+</div>
+ 
+<!-- Modale Congés / Docker -->
+<div class="modal-overlay" id="m-conges" role="dialog" aria-modal="true">
+  <div class="modal-box">
+    <button class="modal-close" onclick="closeModal('m-conges')">✕</button>
+    <div class="modal-header" style="background:linear-gradient(135deg,#0c1445,#1d4ed8)">
+      <span class="modal-badge">DevOps · 2025</span>
+      <h3>Gestion des Congés</h3>
+    </div>
+    <div class="modal-body">
+      <p>Application web PHP/MySQL Dockerisée permettant la gestion des clients et commandes, sur une architecture multi-conteneurs orchestrée par Docker Compose.</p>
+      <div class="modal-section">
+        <h4>Infrastructure</h4>
+        <ul>
+          <li>Conteneur Apache/PHP pour l'application web</li>
+          <li>Conteneur MySQL pour la base de données (port 3307)</li>
+          <li>Docker Compose pour l'orchestration</li>
+          <li>Architecture MVC : controllers, models, views</li>
+          <li>Script d'initialisation SQL automatique</li>
+        </ul>
+      </div>
+      <div class="modal-tags"><span>Docker</span><span>PHP</span><span>MySQL</span><span>Apache</span><span>Docker Compose</span></div>
+      <div class="modal-links">
+        <a href="https://github.com/Sa6rinaa/Projet_GestionDesCong-s" target="_blank" class="modal-btn modal-btn-ghost">GitHub ↗</a>
+      </div>
+    </div>
+  </div>
+</div>
+ 
+<!-- Modale GLPI -->
+<div class="modal-overlay" id="m-glpi" role="dialog" aria-modal="true">
+  <div class="modal-box">
+    <button class="modal-close" onclick="closeModal('m-glpi')">✕</button>
+    <div class="modal-header" style="background:linear-gradient(135deg,#1a1a2e,#0f3460)">
+      <span class="modal-badge">Sysadmin · 2025</span>
+      <h3>GLPI</h3>
+    </div>
+    <div class="modal-body">
+      <p>Déploiement et configuration de GLPI (Gestionnaire Libre de Parc Informatique) sur un environnement LAMP complet, avec configuration de machines virtuelles Debian et Windows.</p>
+      <div class="modal-section">
+        <h4>Étapes réalisées</h4>
+        <ul>
+          <li>Configuration de VMs Debian et Windows en réseau</li>
+          <li>Installation et configuration de la stack LAMP</li>
+          <li>Déploiement GLPI et configuration de la base MariaDB</li>
+          <li>Paramétrage des tickets, actifs, contrats et fournisseurs</li>
+          <li>Interface web de gestion du parc informatique</li>
+        </ul>
+      </div>
+      <div class="modal-tags"><span>Linux Debian</span><span>Apache</span><span>MariaDB</span><span>PHP</span><span>VMs</span></div>
+      <div class="modal-links">
+        <a href="https://github.com/Sa6rinaa/GLPI" target="_blank" class="modal-btn modal-btn-ghost">GitHub ↗</a>
+      </div>
+    </div>
+  </div>
+</div>
+ 
+<!-- Modale Figma TechSolutions -->
+<div class="modal-overlay" id="m-figma" role="dialog" aria-modal="true">
+  <div class="modal-box">
+    <button class="modal-close" onclick="closeModal('m-figma')">✕</button>
+    <div class="modal-header" style="background:linear-gradient(135deg,#2d1b69,#4c1d95)">
+      <span class="modal-badge">UX / Design · 2025</span>
+      <h3>Figma TechSolutions</h3>
+    </div>
+    <div class="modal-body">
+      <p>Outil de gestion de tickets IT conçu avec une méthodologie UX professionnelle complète — de la recherche utilisateur au prototypage interactif Figma, puis implémenté avec Vite.</p>
+      <div class="modal-section">
+        <h4>Approche UX</h4>
+        <ul>
+          <li>Diagramme de flux des tickets (Nouveau → En cours → Résolu)</li>
+          <li>Composants Figma réutilisables avec auto-layout</li>
+          <li>Système de statuts colorés et badges</li>
+          <li>Implémentation Vite + TypeScript du prototype</li>
+        </ul>
+      </div>
+      <div class="modal-tags"><span>Figma</span><span>Vite</span><span>TypeScript</span><span>UX Research</span><span>Auto-layout</span></div>
+      <div class="modal-links">
+        <a href="https://sa6rinaa.github.io/figma-techsolutions/" target="_blank" class="modal-btn modal-btn-primary">Voir la démo ↗</a>
+        <a href="https://github.com/Sa6rinaa/figma-techsolutions" target="_blank" class="modal-btn modal-btn-ghost">GitHub ↗</a>
+      </div>
+    </div>
+  </div>
+</div>
+ 
+<!-- Modale CCF Python -->
+<div class="modal-overlay" id="m-python" role="dialog" aria-modal="true">
+  <div class="modal-box">
+    <button class="modal-close" onclick="closeModal('m-python')">✕</button>
+    <div class="modal-header" style="background:linear-gradient(135deg,#1c1f26,#2d3748)">
+      <span class="modal-badge">Python · CCF BTS</span>
+      <h3>BoutikPro — CCF Python</h3>
+    </div>
+    <div class="modal-body">
+      <p>Application de gestion commerciale conçue pour le CCF BTS SIO SLAM, centrée sur la modélisation UML/Merise et trois modes d'accès à une base MySQL.</p>
+      <div class="modal-section">
+        <h4>Compétences couvertes</h4>
+        <ul>
+          <li>Modélisation MCD → MLD avec Looping et PlantUML</li>
+          <li>Diagramme de cas d'utilisation UML</li>
+          <li>CRUD Python DB-API (connexion native MySQL)</li>
+          <li>SQLAlchemy Core — requêtes SQL expressives</li>
+          <li>SQLAlchemy ORM — mapping classes/tables</li>
+          <li>Entités : Clients, Produits, Commandes, Lignes de commande</li>
+        </ul>
+      </div>
+      <div class="modal-tags"><span>Python</span><span>MySQL</span><span>SQLAlchemy</span><span>UML</span><span>Merise</span></div>
+      <div class="modal-links">
+        <a href="https://github.com/BTS2-SIO-SLAM-LSW/bts-sio-2-oral-du-ccf-python-Sa6rinaa" target="_blank" class="modal-btn modal-btn-ghost">GitHub ↗</a>
+      </div>
+    </div>
+  </div>
+</div>
+ 
+<!-- Modale RGAA -->
+<div class="modal-overlay" id="m-rgaa" role="dialog" aria-modal="true">
+  <div class="modal-box">
+    <button class="modal-close" onclick="closeModal('m-rgaa')">✕</button>
+    <div class="modal-header" style="background:linear-gradient(135deg,#3b2800,#78350f)">
+      <span class="modal-badge">Accessibilité · 2025</span>
+      <h3>RGAA 4.1.2</h3>
+    </div>
+    <div class="modal-body">
+      <p>Formation complète aux bonnes pratiques d'accessibilité web selon le référentiel RGAA 4.1.2 — garantir l'accès au web pour tous les utilisateurs, quels que soient leurs handicaps.</p>
+      <div class="modal-section">
+        <h4>Thèmes abordés</h4>
+        <ul>
+          <li>HTML sémantique — structure et hiérarchie des titres</li>
+          <li>WAI-ARIA — rôles, états et propriétés pour les composants dynamiques</li>
+          <li>Navigation clavier — focus visible, ordre de tabulation</li>
+          <li>Lecteurs d'écran — tests avec NVDA et VoiceOver</li>
+          <li>Contrastes — niveau AA et AAA, outils de vérification</li>
+        </ul>
+      </div>
+      <div class="modal-tags"><span>HTML sémantique</span><span>CSS</span><span>WAI-ARIA</span><span>RGAA 4.1.2</span></div>
+    </div>
+  </div>
+</div>
+ 
+<!-- Modale Portfolio -->
+<div class="modal-overlay" id="m-portfolio" role="dialog" aria-modal="true">
+  <div class="modal-box">
+    <button class="modal-close" onclick="closeModal('m-portfolio')">✕</button>
+    <div class="modal-header" style="background:linear-gradient(135deg,#2e1065,#4c1d95)">
+      <span class="modal-badge">Portfolio · 2025</span>
+      <h3>Portfolio BTS</h3>
+    </div>
+    <div class="modal-body">
+      <p>Ce portfolio est lui-même un projet — conçu et développé de A à Z pour présenter mes compétences BTS SIO SLAM avec une attention particulière au design et aux animations.</p>
+      <div class="modal-section">
+        <h4>Ce qui a été réalisé</h4>
+        <ul>
+          <li>Design system cohérent avec variables CSS</li>
+          <li>Animations d'entrée au scroll (reveal-up)</li>
+          <li>Système de modales pour les projets</li>
+          <li>Carrousel interactif avec filtres par catégorie</li>
+          <li>Responsive mobile-first</li>
+        </ul>
+      </div>
+      <div class="modal-tags"><span>HTML5</span><span>CSS3</span><span>JavaScript Vanilla</span></div>
+    </div>
+  </div>
+</div>
+ 
+<!-- Modale App de Gestion Stage -->
+<div class="modal-overlay" id="m-stage" role="dialog" aria-modal="true">
+  <div class="modal-box">
+    <button class="modal-close" onclick="closeModal('m-stage')">✕</button>
+    <div class="modal-header" style="background:linear-gradient(135deg,#3b0000,#7f1d1d)">
+      <span class="modal-badge">Laravel · Stage</span>
+      <h3>App de Gestion</h3>
+    </div>
+    <div class="modal-body">
+      <p>Application full-stack développée en stage — système de gestion complet avec authentification sécurisée, gestion des droits par rôles et tableau de bord administrateur.</p>
+      <div class="modal-section">
+        <h4>Fonctionnalités</h4>
+        <ul>
+          <li>Authentification et sessions sécurisées Laravel</li>
+          <li>3 niveaux de rôles utilisateurs avec permissions granulaires</li>
+          <li>Tableau de bord avec statistiques temps réel</li>
+          <li>Interface Tailwind CSS responsive et moderne</li>
+          <li>Base de données MySQL avec migrations et seeders</li>
+        </ul>
+      </div>
+      <div class="modal-tags"><span>Laravel</span><span>MySQL</span><span>Tailwind CSS</span><span>PHP</span></div>
+    </div>
+  </div>
+</div>
+ 
+<!-- Modale WordPress -->
+<div class="modal-overlay" id="m-wordpress" role="dialog" aria-modal="true">
+  <div class="modal-box">
+    <button class="modal-close" onclick="closeModal('m-wordpress')">✕</button>
+    <div class="modal-header" style="background:linear-gradient(135deg,#21759b,#0d4f6c)">
+      <span class="modal-badge">E-commerce · En cours 🚧</span>
+      <h3>Site E-commerce</h3>
+    </div>
+    <div class="modal-body">
+      <p>Site e-commerce en cours de développement, hébergé sur OVH. Projet personnel utilisant WordPress et WooCommerce pour créer une boutique en ligne complète.</p>
+      <div class="modal-section">
+        <h4>Prévu</h4>
+        <ul>
+          <li>Boutique WooCommerce avec gestion des produits</li>
+          <li>Paiement en ligne et gestion des commandes</li>
+          <li>Design personnalisé et responsive</li>
+          <li>Hébergement et configuration OVH</li>
+          <li>SEO et optimisation des performances</li>
+        </ul>
+      </div>
+      <div class="modal-tags"><span>WordPress</span><span>WooCommerce</span><span>OVH</span><span>PHP</span></div>
+      <p style="color:var(--accent,#a78bfa);font-size:.85rem;margin-top:12px">🚧 Projet en cours de développement — lien disponible prochainement.</p>
+    </div>
+  </div>
+</div>
+ 
+    <!-- ── EXPÉRIENCE ── (MODIFIÉ: stages mis en avant, ordre inversé) -->
+<section id="experience" class="section-experience">
+    <div class="container">
+        <div class="section-eyebrow reveal-up">
+        
+        </div>
+        <h2 class="section-title reveal-up">Mon <em>parcours</em></h2>
+
+        <div class="timeline">
+            <div class="timeline-line"></div>
+
+            <div class="timeline-item reveal-up" style="animation-delay:.4s">
+                <div class="timeline-dot"></div>
+                <div class="timeline-period">
+                    <span class="timeline-date">2022 — 2023</span>
+                </div>
+                <div class="timeline-content">
+                    <div class="timeline-header">
+                        <div>
+                            <h3>Baccalauréat STI2D</h3>
+                            <p class="tl-company">Lycée François Mauriac</p>
+                            <p class="tl-role">Option ITEC — Innovation Technologique et Éco-conception</p>
+                        </div>
+                        <div class="timeline-logo-placeholder" style="font-size:.65rem">BAC</div>
+                    </div>
+                    <p class="tl-desc">Obtention du Baccalauréat orienté vers l'innovation et la conception technique. Apprentissage des bases de la modélisation et des systèmes technologiques.</p>
+                    <div class="tl-tags"><span>Conception</span><span>Modélisation</span><span>Innovation</span></div>
+                </div>
+            </div>
+
+            <div class="timeline-item reveal-up" style="animation-delay:.3s">
+                <div class="timeline-dot"></div>
+                <div class="timeline-period">
+                    <span class="timeline-date">2023 — 2025</span>
+                    <span class="timeline-duration">En cours (2ème année)</span>
+                </div>
+                <div class="timeline-content">
+                    <div class="timeline-header">
+                        <div>
+                            <h3>BTS SIO SLAM</h3>
+                            <p class="tl-company">Lycée (Saint-Priest-en-Jarez)</p>
+                            <p class="tl-role">Solutions Logicielles et Applications Métier</p>
+                        </div>
+                        <div class="timeline-logo-placeholder" style="font-size:.65rem">SIO</div>
+                    </div>
+                    <p class="tl-desc">Approfondissement du développement full-stack, de la gestion de projets Agile et de la conception de bases de données complexes.</p>
+                    <div class="tl-tags"><span>PHP (Laravel)</span><span>JavaScript</span><span>MySQL</span><span>Agile</span></div>
+                </div>
+            </div>
+
+            <div class="timeline-item timeline-item-stage reveal-up" style="animation-delay:.2s">
+                <div class="timeline-dot timeline-dot-stage"></div>
+                <div class="timeline-period">
+                    <span class="timeline-date">Avril — Juin 2025</span>
+                </div>
+                <div class="timeline-content timeline-content-stage">
+                    <div class="stage-banner">
+                        <span class="stage-banner-icon">🏢</span>
+                        <span>Stage 1ère année</span>
+                    </div>
+                    <div class="timeline-header">
+                        <div>
+                            <h3>Développeur Web (Stage)</h3>
+                            <p class="tl-company">YTTY — La Ricamarie</p>
+                            <p class="tl-role">Tuteur : Tim Langues</p>
+                        </div>
+                        <div class="timeline-logo-placeholder">YTTY</div>
+                    </div>
+                    <p class="tl-desc">Première immersion professionnelle. Développement de fonctionnalités web et intégration de maquettes au sein d'un environnement de production professionnel.</p>
+                    <div class="tl-tags"><span>HTML/CSS</span><span>JavaScript</span><span>Git</span></div>
+                </div>
+            </div>
+
+            <div class="timeline-item timeline-item-stage reveal-up" style="animation-delay:.1s">
+                <div class="timeline-dot timeline-dot-stage"></div>
+                <div class="timeline-period">
+                    <span class="timeline-date">Janv — Fév 2026</span>
+                </div>
+                <div class="timeline-content timeline-content-stage">
+                    <div class="stage-banner">
+                        <span class="stage-banner-icon">🚀</span>
+                        <span>Stage 2ème année</span>
+                    </div>
+                    <div class="timeline-header">
+                        <div>
+                            <h3>Développeur Web (Stage)</h3>
+                            <p class="tl-company">Heracle Consulting — Paris (Champs-Élysées)</p>
+                            <p class="tl-role">Tuteur : Yanis Abedi</p>
+                        </div>
+                        <div class="timeline-logo-placeholder">H.C</div>
+                    </div>
+                    <p class="tl-desc">Collaboration sur des projets web de grande envergure. Optimisation de code, intégration responsive et participation aux réflexions techniques de l'agence.</p>
+                    <div class="tl-tags"><span>Web Development</span><span>Web Apps</span><span>Agile</span></div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+</section>
+
+    <!-- ── CONTACT ── (MODIFIÉ: titre + effets formulaire) -->
     <section id="contact" class="section-contact">
         <div class="container">
-            <div class="section-header">
-                <h2 class="section-title">Contactez-moi</h2>
-                <p class="section-subtitle">N'hésitez pas à me contacter pour vos projets</p>
+            <div class="section-eyebrow reveal-up">
+               
             </div>
-            <div class="contact-content">
-                <div class="contact-info">
-                    <div class="contact-item">
-                        <div class="contact-icon">
-                            <img src="location-icon.png" alt="Icône localisation" class="icon">
-                        </div>
-                        <div class="contact-details">
-                            <h3>Localisation</h3>
-                            <p>Andrézieux-Bouthéon</p>
-                        </div>
-                    </div>
-                    
-                    <div class="contact-item">
-                        <div class="contact-icon">
-                            <img src="phone-icon.png" alt="Icône téléphone" class="icon">
-                        </div>
-                        <div class="contact-details">
-                            <h3>Téléphone</h3>
-                            <p>07 68 39 84 98</p>
-                        </div>
-                    </div>
-                    
-                    <div class="contact-item">
-                        <div class="contact-icon">
-                            <img src="email-icon.png" alt="Icône email" class="icon">
-                        </div>
-                        <div class="contact-details">
-                            <h3>Email</h3>
-                            <p>sabrina.protière@gmail.com</p>
-                        </div>
-                    </div>
-                    
-                    <div class="illustration">
-                        <img src="Illustration3.png" alt="Illustration contact" class="contact-illustration">
-                    </div>
+            <!-- MODIFIÉ: titre changé -->
+            <h2 class="section-title reveal-up">Contactez <em>moi</em></h2>
+            <div class="contact-grid">
+                <div class="contact-info reveal-up">
+                    <div class="contact-item"><span class="ci-label">Localisation</span><span class="ci-value">Bonson</span></div>
+                    <div class="contact-item"><span class="ci-label">Téléphone</span><span class="ci-value">07 68 39 84 98</span></div>
+                    <div class="contact-item"><span class="ci-label">Email</span><a href="mailto:sabrina.protiere@gmail.com" class="ci-value ci-link">sabrina.protiere@gmail.com</a></div>
+                    <div class="contact-item"><span class="ci-label">Réseaux</span><div class="ci-socials"><a href="https://github.com/Sa6rinaa" target="_blank">GitHub</a><a href="https://www.linkedin.com/in/sabrina-protiere-6121a4353/" target="_blank">LinkedIn</a></div></div>
                 </div>
-                
-                <div class="contact-form">
-                    <form class="formulaire-contact" action="#" method="POST">
-                        <div class="form-group">
+                <!-- MODIFIÉ: effets hover sur les champs -->
+                <form class="contact-form reveal-up" style="animation-delay:.15s" action="#" method="POST">
+                    <div class="form-row">
+                        <div class="form-group form-group-animated">
                             <label for="nom">Nom complet</label>
-                            <input type="text" id="nom" name="nom" placeholder="Votre nom complet" required>
+                            <div class="input-wrap">
+                                <input type="text" id="nom" name="nom" placeholder="Votre nom" required>
+                                <div class="input-glow"></div>
+                            </div>
                         </div>
-                        
-                        <div class="form-group">
-                            <label for="email">Adresse email</label>
-                            <input type="email" id="email" name="email" placeholder="votre.email@exemple.com" required>
+                        <div class="form-group form-group-animated">
+                            <label for="email">Email</label>
+                            <div class="input-wrap">
+                                <input type="email" id="email" name="email" placeholder="votre@email.com" required>
+                                <div class="input-glow"></div>
+                            </div>
                         </div>
-                        
-                        <div class="form-group">
-                            <label for="sujet">Sujet</label>
+                    </div>
+                    <div class="form-group form-group-animated">
+                        <label for="sujet">Sujet</label>
+                        <div class="input-wrap">
                             <input type="text" id="sujet" name="sujet" placeholder="Sujet de votre message">
+                            <div class="input-glow"></div>
                         </div>
-                        
-                        <div class="form-group">
-                            <label for="message">Message</label>
-                            <textarea id="message" name="message" rows="6" placeholder="Votre message..." required></textarea>
+                    </div>
+                    <div class="form-group form-group-animated">
+                        <label for="message">Message</label>
+                        <div class="input-wrap">
+                            <textarea id="message" name="message" rows="5" placeholder="Votre message..." required></textarea>
+                            <div class="input-glow"></div>
                         </div>
-                        
-                        <button type="submit" class="btn btn-submit">Envoyer le message</button>
-                    </form>
-                </div>
+                    </div>
+                    <button type="submit" class="btn-primary">
+                        <span>Envoyer le message</span>
+                        <svg width="16" height="16" viewBox="0 0 16 16" fill="none"><path d="M3 8h10M9 4l4 4-4 4" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
+                    </button>
+                </form>
             </div>
         </div>
     </section>
 
-    <!-- Footer -->
+    <!-- ── FOOTER ── -->
     <footer class="footer">
         <div class="container">
-            <div class="footer-content">
-                <div class="footer-section">
-                    <h3>Sabrina Protière</h3>
-                    <p>Étudiante BTS SIO - Développement Logiciel</p>
+            <div class="footer-inner">
+                <div class="footer-brand">
+                    <span class="footer-logo">Portfolio<span class="logo-dot">.</span></span>
+                    <p>Sabrina Protière<br><em>Développeuse logiciel</em></p>
                 </div>
-                
-                <div class="footer-section">
-                    <h4>Navigation</h4>
-                    <ul class="footer-links">
-                        <li><a href="#a-propos">À propos</a></li>
-                        <li><a href="#competences">Compétences</a></li>
-                        <li><a href="#projets">Projets</a></li>
-                        <li><a href="#contact">Contact</a></li>
-                    </ul>
-                </div>
-                
-                <div class="footer-section">
-                    <h4>Contact</h4>
-                    <ul class="footer-contact">
-                        <li>Andrézieux-Bouthéon</li>
-                        <li>07 68 39 84 98</li>
-                        <li>sabrina.protière@gmail.com</li>
-                    </ul>
+                <div class="footer-nav">
+                    <a href="#a-propos">À propos</a>
+                    <a href="#competences">Compétences</a>
+                    <a href="#certifications">Certifications</a>
+                    <a href="#projets">Projets</a>
+                    <a href="#experience">Expérience</a>
+                    <a href="#contact">Contact</a>
                 </div>
             </div>
-            
-            <div class="footer-bottom">
-                <p>&copy; 2024 Sabrina Protière. Tous droits réservés.</p>
-            </div>
+            <div class="footer-bottom"><p>© 2025 Sabrina Protière — Tous droits réservés</p></div>
         </div>
     </footer>
+
+    <!-- ── MODALS ── -->
+    <div id="modal-projet1" class="modal-overlay" onclick="closeModal(event,'projet1')">
+        <div class="modal-box" onclick="event.stopPropagation()">
+            <button class="modal-close" onclick="closeModal(event,'projet1')">×</button>
+            <div class="modal-head"><span class="modal-cat">— API REST</span><h2>API Citations</h2><span class="modal-date">Septembre 2025</span></div>
+            <div class="modal-body"><p>API RESTful complète permettant la gestion de citations avec opérations CRUD. Architecture MVC structurée et documentation API complète via Postman.</p><h4>Fonctionnalités</h4><ul><li>Création de citations avec auteur et catégorie</li><li>Lecture et recherche par critères multiples</li><li>Modification et suppression</li><li>Pagination des résultats</li><li>API documentée avec Postman</li></ul><div class="modal-tags"><span>Node.js</span><span>Express.js</span><span>SQLite</span><span>MySQL</span><span>Postman</span></div></div>
+            <div class="modal-foot"><a href="https://github.com/BTS2-SIO-SLAM-LSW/mission-1-api-citations-Sa6rinaa" class="btn-primary">Voir sur GitHub</a></div>
+        </div>
+    </div>
+    <div id="modal-projet2" class="modal-overlay" onclick="closeModal(event,'projet2')">
+        <div class="modal-box" onclick="event.stopPropagation()">
+            <button class="modal-close" onclick="closeModal(event,'projet2')">×</button>
+            <div class="modal-head"><span class="modal-cat">— UX / UI Design</span><h2>Atelier Figma TechSolutions</h2><span class="modal-date">Septembre 2025</span></div>
+            <div class="modal-body"><p>Projet de conception UX/UI complet pour un système de gestion de tickets IT.</p><h4>Process</h4><ul><li>Analyse des besoins utilisateurs et personas</li><li>Wireframing et maquettes basse fidélité</li><li>Design system et charte graphique</li><li>Prototype interactif avec transitions</li><li>Interface responsive</li></ul><div class="modal-tags"><span>Figma</span><span>Design System</span><span>Prototypage</span><span>UX Research</span></div></div>
+            <div class="modal-foot"><a href="https://github.com/Sa6rinaa/figma-techsolutions" class="btn-primary">Voir sur GitHub</a></div>
+        </div>
+    </div>
+    <div id="modal-projet3" class="modal-overlay" onclick="closeModal(event,'projet3')">
+        <div class="modal-box" onclick="event.stopPropagation()">
+            <button class="modal-close" onclick="closeModal(event,'projet3')">×</button>
+            <div class="modal-head"><span class="modal-cat">— Accessibilité</span><h2>Accessibilité Web RGAA 4.1.2</h2><span class="modal-date">Projet de formation</span></div>
+            <div class="modal-body"><p>Formation complète aux bonnes pratiques d'accessibilité web selon le RGAA 4.1.2.</p><h4>Thématiques</h4><ul><li>Sémantique HTML et structure logique</li><li>Navigation au clavier et gestion du focus</li><li>ARIA (Accessible Rich Internet Applications)</li><li>Contrastes et lisibilité des couleurs</li><li>Compatibilité avec les lecteurs d'écran</li></ul><div class="modal-tags"><span>HTML5</span><span>CSS3</span><span>WAI-ARIA</span><span>WCAG 2.1</span><span>RGAA 4.1.2</span></div></div>
+            <div class="modal-foot"><a href="https://github.com/BTS2-SIO-SLAM-LSW/atelier-accessibilit-web-rgaa-4-1-2-Sa6rinaa" class="btn-primary">Voir sur GitHub</a></div>
+        </div>
+    </div>
+    <div id="modal-projet4" class="modal-overlay" onclick="closeModal(event,'projet4')">
+        <div class="modal-box" onclick="event.stopPropagation()">
+            <button class="modal-close" onclick="closeModal(event,'projet4')">×</button>
+            <div class="modal-head"><span class="modal-cat">— Portfolio</span><h2>Portfolio BTS SIO</h2><span class="modal-date">2024 — 2025</span></div>
+            <div class="modal-body"><p>Conception et développement de ce portfolio personnel pour présenter mes compétences et projets.</p><h4>Fonctionnalités</h4><ul><li>Design moderne avec animations CSS</li><li>Navigation fluide et scroll animé</li><li>Sections interactives</li><li>Responsive mobile/desktop</li><li>Curseur personnalisé</li></ul><div class="modal-tags"><span>HTML5</span><span>CSS3</span><span>JavaScript</span></div></div>
+            <div class="modal-foot"><a href="https://github.com/Sa6rinaa" class="btn-primary">Voir sur GitHub</a></div>
+        </div>
+    </div>
+    <div id="modal-projet5" class="modal-overlay" onclick="closeModal(event,'projet5')">
+        <div class="modal-box" onclick="event.stopPropagation()">
+            <button class="modal-close" onclick="closeModal(event,'projet5')">×</button>
+            <div class="modal-head"><span class="modal-cat">— Laravel</span><h2>Application de Gestion</h2><span class="modal-date">Stage YTTY</span></div>
+            <div class="modal-body"><p>Application web full-stack développée en Laravel avec authentification et gestion des rôles.</p><h4>Fonctionnalités</h4><ul><li>Authentification et rôles utilisateurs</li><li>Tableau de bord administrateur</li><li>CRUD complet sur les entités</li><li>Interface responsive Tailwind CSS</li><li>API REST interne</li></ul><div class="modal-tags"><span>Laravel</span><span>MySQL</span><span>Tailwind CSS</span><span>TypeScript</span></div></div>
+            <div class="modal-foot"><a href="https://github.com/Sa6rinaa" class="btn-primary">Voir sur GitHub</a></div>
+        </div>
+    </div>
 
     <script src="index.js" defer></script>
 </body>
